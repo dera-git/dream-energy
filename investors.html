@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Energy</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main class="main">
+    <header class="kl-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <a class="navbar-brand py-0" href="#">
+                    <img class="kl-logo-when-light img-fluid" src="./images/logo.svg" alt="Logo Dream Energy">
+                    <img class="kl-logo-when-dark img-fluid" src="./images/logo-white.svg" alt="Logo Dream Energy">
+                </a>
+                <div class="kl-wrapper-navbar-toggler d-lg-none">
+                    <button class="navbar-toggler kl-btn kl-btn-black js-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="kl-menu-burger">
+                                <i class="kl-menu-burger-line"></i>
+                                <i class="kl-menu-burger-line"></i>
+                                <i class="kl-menu-burger-line"></i>
+                            </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="id-navbar-supported-content">
+                    <ul class="navbar-nav align-items-lg-center ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown js-dropdwon-hover" data-width="206">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Qui sommes-nous ?
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Opérateur de stations de superchargeurs</a></li>
+                                <li><a class="dropdown-item" href="#">Producteur d'énergie renouvelable</a></li>
+                                <li><a class="dropdown-item" href="#">Fournisseur d'énergie renouvelable</a></li>
+                                <li><a class="dropdown-item" href="#">Bureau d’étude et R&D</a></li>
+                                <li><a class="dropdown-item" href="#">Notre équipe</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Notre modèle</a>
+                        </li>
+                        <li class="nav-item dropdown js-dropdwon-hover" data-width="274">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Nos stations
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Trouver une station</a></li>
+                                <li><a class="dropdown-item" href="#">Nos gammes de stations</a></li>
+                                <li><a class="dropdown-item" href="#">Notre borne superchargeur</a></li>
+                                <li><a class="dropdown-item" href="#">Héberger une station</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tarifs</a>
+                        </li>
+                        <li class="nav-item dropdown js-dropdwon-hover">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                Actualités
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Presse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Investisseurs</a>
+                        </li>
+                        <li class="nav-item ms-2 ms-xl-4 d-none d-lg-block">
+                            <a href="#" class="kl-btn kl-btn-black">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-none ps-2 mt-auto w-100">
+                        <a href="#" class="kl-btn kl-btn-white mx-2 mb-3">Contact</a>
+                        <a href="#" class="kl-btn kl-btn-white mx-2 mb-3">Proposer un site</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="kl-scroll-container kl-modele-page-primary" data-scroll-container>
+        <section class="kl-section-hero kl-section-hero-page mb-2">
+            <div class="container kl-container-xl-1120 kl-gx-16 flex-grow-1 d-flex flex-column">
+                <div class="kl-hero-video">
+                    <video id="id-hero-video" class="kl-hero-bg-video" autoplay loop muted src="./videos/SampleVideo_1280x720_1mb.mp4"></video>
+                    <div class="kl-hero-video-overlay"></div>
+                    <div class="kl-hero-video-content kl-color-white">
+                        <div class="kl-title-hero kl-underline-span">
+                            <h1>Choisissez un partenaire solide de la mobilité électrique <span class="kl-underline-gradient-animate"><span class="position-relative kl-z-index-1">100% renouvelable</span><span class="kl-gradient-animation kl-z-index-0" data-aos="fade-right" data-aos-duration="800"></span></span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-2 py-md-5">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="row kl-gx-16 mb-4">
+                    <div class="col-md-6">
+                        <div class="kl-title-h2-resp my-3 my-md-0">
+                            <h2>
+                                Avec les stations super-chargeurs DREAM ENERGY Mobility, devenez acteur de la transition énergétique en choisissant un opérateur intégré et innovant.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <p>
+                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kl-max-w-720 mx-auto pt-md-3">
+                    <h3>Dream Energy un écosystème technique & humain</h3>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="kl-section-chiffres-cles py-5">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="text-center mb-3 pb-2" data-aos="fade-up">
+                    <h3>Chiffres clés</h3>
+                </div>
+                <ul class="kl-nav-pills nav nav-pills mb-4 mb-md-5 pb-md-4 justify-content-center" id="id-pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-2022-tab" data-bs-toggle="pill" data-bs-target="#pills-2022" type="button" role="tab" aria-controls="pills-2022" aria-selected="false">2022</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-2023-tab" data-bs-toggle="pill" data-bs-target="#pills-2023" type="button" role="tab" aria-controls="pills-2023" aria-selected="false">2023</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-2024-tab" data-bs-toggle="pill" data-bs-target="#pills-2024" type="button" role="tab" aria-controls="pills-2024" aria-selected="false">2024</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-2025-tab" data-bs-toggle="pill" data-bs-target="#pills-2025" type="button" role="tab" aria-controls="pills-2025" aria-selected="false">2025</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-2026-tab" data-bs-toggle="pill" data-bs-target="#pills-2026" type="button" role="tab" aria-controls="pills-2026" aria-selected="true">2026</button>
+                    </li>
+                </ul>
+                <div class="kl-max-w-720 kl-max-w-md-310 mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="tab-content" id="id-pills-tabContent">
+                        <div class="tab-pane fade" id="pills-2022" role="tabpanel" aria-labelledby="pills-2022-tab" tabindex="0">
+                            <div class="row kl-gx-16">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <img src="./images/investors/graph-2022.svg" alt="graph 2026" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 pt-1 pt-md-0">
+                                    <div class="kl-graph-infos ms-md-auto">
+                                        <h3>9,7 millions d’euros, <br>rentable en exploitation</h3>
+                                        <div>
+                                            <h3>100 stations déployés</h3>
+                                            <p>468 points de charge</p>
+                                        </div>
+                                        <ul class="kl-colored-list">
+                                            <li class="kl-green-item">Chiffre d’Affaire (M€)</li>
+                                            <li class="kl-blue-item">Stations déployées</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-2023" role="tabpanel" aria-labelledby="pills-2023-tab" tabindex="0">
+                            <div class="row kl-gx-16">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <img src="./images/investors/graph-2023.svg" alt="graph 2026" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 pt-1 pt-md-0">
+                                    <div class="kl-graph-infos ms-md-auto">
+                                        <h3>31 millions d’euros, <br>rentable en exploitation</h3>
+                                        <div>
+                                            <h3>210 stations déployés</h3>
+                                            <p>1 000 points de charge</p>
+                                        </div>
+                                        <ul class="kl-colored-list">
+                                            <li class="kl-green-item">Chiffre d’Affaire (M€)</li>
+                                            <li class="kl-blue-item">Stations déployées</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-2024" role="tabpanel" aria-labelledby="pills-2024-tab" tabindex="0">
+                            <div class="row kl-gx-16">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <img src="./images/investors/graph-2024.svg" alt="graph 2026" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 pt-1 pt-md-0">
+                                    <div class="kl-graph-infos ms-md-auto">
+                                        <h3>164 millions d’euros, <br>rentable en exploitation</h3>
+                                        <div>
+                                            <h3>450 stations déployés</h3>
+                                            <p>2 388 points de charge</p>
+                                        </div>
+                                        <ul class="kl-colored-list">
+                                            <li class="kl-green-item">Chiffre d’Affaire (M€)</li>
+                                            <li class="kl-blue-item">Stations déployées</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-2025" role="tabpanel" aria-labelledby="pills-2025-tab" tabindex="0">
+                            <div class="row kl-gx-16">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <img src="./images/investors/graph-2025.svg" alt="graph 2026" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 pt-1 pt-md-0">
+                                    <div class="kl-graph-infos ms-md-auto">
+                                        <h3>83 millions d’euros, <br>rentable en exploitation</h3>
+                                        <div>
+                                            <h3>330 stations déployés</h3>
+                                            <p>1 680 points de charge</p>
+                                        </div>
+                                        <ul class="kl-colored-list">
+                                            <li class="kl-green-item">Chiffre d’Affaire (M€)</li>
+                                            <li class="kl-blue-item">Stations déployées</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-2026" role="tabpanel" aria-labelledby="pills-2026-tab" tabindex="0">
+                            <div class="row kl-gx-16">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <img src="./images/investors/graph-2026.svg" alt="graph 2026" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 pt-1 pt-md-0">
+                                    <div class="kl-graph-infos ms-md-auto">
+                                        <h3>164 millions d’euros, <br>rentable en exploitation</h3>
+                                        <div>
+                                            <h3>450 stations déployés</h3>
+                                            <p>2 388 points de charge</p>
+                                        </div>
+                                        <ul class="kl-colored-list">
+                                            <li class="kl-green-item">Chiffre d’Affaire (M€)</li>
+                                            <li class="kl-blue-item">Stations déployées</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kl-section-roadmap pt-4 pt-md-5 pb-5">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="text-center mb-3 mb-md-5 pb-1" data-aos="fade-up">
+                    <h3>Notre roadmap</h3>
+                </div>
+                <div class="kl-roadmap-timeline">
+                    <div class="kl-roadmap-timeline-line"></div>
+                    <div class="kl-roadmap-timeline-row">
+                        <h3>2021 / 2022</h3>
+                        <p>Création de l’application DREAM ENERGY Mobility.</p>
+                    </div>
+                    <div class="kl-roadmap-timeline-row">
+                        <h3>Début 2022</h3>
+                        <p>Signature d’un partenariat avec SIEMENS (fournisseur de bornes).</p>
+                    </div>
+                    <div class="kl-roadmap-timeline-row">
+                        <h3>Mi-2022</h3>
+                        <p>Création de l’application DREAM ENERGY Mobility en partenariat  avec SIEMENS et des équipes IT de Dream Energy Mobility.</p>
+                    </div>
+                    <div class="kl-roadmap-timeline-row">
+                        <h3>2022</h3>
+                        <p>Lancement des 20 premières stations du groupe ARTEA, action commerciale auprès des 250 clients corporate.</p>
+                    </div>
+                    <div class="kl-roadmap-timeline-row">
+                        <h3>2022</h3>
+                        <p>Développement de la carte de paiement dédiée DREAM ENERGY Mobility, développment CRM, développement stratégie marketing B to C, communication réseaux sociaux, presse, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kl-section-text-img pt-md-5">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="row kl-row-text-img align-items-md-center pb-2 pb-md-4 mb-5">
+                    <div class="col-md-6 text-end order-md-1">
+                        <div class="kl-size-img-443 mb-3 mb-md-0 pb-3 pb-md-0" data-aos="fade-left" data-aos-duration="800">
+                            <img src="./images/investors/Station_First.png" alt="image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-0">
+                        <div data-aos="fade-right" data-aos-duration="800">
+                            <div class="kl-max-w-454">
+                                <p>Développeur d’infrastructures de production et de distribution d’hydrogène vert, DREAM ENERGY est en discussion avec différentes collectivités locales en France et en Italie pour mettre en place des unités de production.</p>
+                                <p>Objectif : Fournir de l’hydrogène vert à des collectivités locales pour accompagner la mutation de leur mobilité lourde (bus, camions bennes à ordures, utilitaires, etc.) vers l’hydrogène.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row kl-row-text-img align-items-md-center pb-2 pb-md-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="kl-size-img-443 mb-3 mb-md-0 pb-3 pb-md-0" data-aos="fade-right" data-aos-duration="800">
+                            <img src="./images/investors/Station_First.png" alt="image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div data-aos="fade-left" data-aos-duration="800">
+                            <div class="kl-max-w-444 ms-md-auto">
+                                <p>DREAM ENERGY se positionne comme un développeur, investisseur et exploitant d’infrastructures.</p>
+                                <p>Objectif à terme : Développer des stations super-chargeurs & d’hydrogène.</p>
+                                <p>Prise de participation envisagée en janvier 2022 : Société SAFRA (constructeur de bus à hydrogène)</p>
+                                <p>Autre participation envisagée en 2022 : Société développant des unités de production d’hydrogène.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kl-section-offre-mobility mb-4 mb-md-5">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="kl-title-section kl-title-h2-resp text-center mb-4 mb-md-5 pb-3 pb-md-0" data-aos="fade-up">
+                    <h2>L’offre DREAM ENERGY Mobility c’est tout à la fois :</h2>
+                </div>
+                <div class="row kl-gx-16 kl-gy-16">
+                    <div class="col-lg-4">
+                        <div class="row kl-gx-16 kl-gy-16">
+                            <div class="col-sm-12 col-md-6 col-lg-12">
+                                <div class="kl-superchargeurs-box kl-superchargeurs-box-gradient flex-row" data-aos="flip-left" data-aos-duration="800">
+                                    <img class="img-fluid ms-2 align-self-end" src="./images/investors/super-chargeur.svg" alt="image">
+                                    <h3 class="ms-3 mb-0 ps-1">Des super-chargeurs pour aller plus vite</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-12">
+                                <div class="kl-superchargeurs-box kl-bg-blue-light flex-row justify-content-end">
+                                    <h3 class="text-end me-2 mb-0">
+                                        Des stations<br>
+                                        faciles d’accès<br>
+                                        et ouvertes à tous
+                                    </h3>
+                                    <img class="img-fluid align-self-end" src="./images/investors/phone.svg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="kl-superchargeurs-box kl-bg-black h-100 kl-min-h-352">
+                            <img src="./images/investors/logo-dream-energy.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row kl-gx-16 kl-gy-16">
+                            <div class="col-sm-12 col-md-6 col-lg-12">
+                                <div class="kl-superchargeurs-box kl-bg-blue-light flex-row">
+                                    <div class="text-end me-4">
+                                        <b>Une offre</b> de services <b>complète</b> pour <b>un véhicule</b> ou <b>des flottes de véhicules</b>
+                                    </div>
+                                    <img class="img-fluid me-4" src="./images/investors/voiture.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-12">
+                                <div class="kl-superchargeurs-box kl-bg-green-primary flex-row justify-content-start" data-aos="flip-left" data-aos-duration="800">
+                                    <img class="img-fluid ms-3" src="./images/investors/renouvelable.svg" alt="image">
+                                    <div class="kl-font-secondary kl-color-white ms-4">
+                                        <div class="kl-fs-16"><b>Une énergie</b></div>
+                                        <div class="kl-fs-47 kl-lh-45 kl-mb--6"><b>100 %</b></div>
+                                        <div class="kl-fs-25"><b>renouvelable</b></div>
+                                        <div class="kl-fs-16"><b>produite en France</b> <img class="ms-1" src="./images/investors/flag-fr.svg" alt="flag fr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="kl-footer">
+            <div class="container kl-container-xl-1120 kl-gx-16">
+                <div class="kl-footer-top">
+                    <div class="kl-title-section text-center" data-aos="fade-up">
+                        <h2>
+                            Notre énergie va vous transporter !
+                            <span class="kl-gradient-animation" data-aos="fade-right" data-aos-duration="800"></span>
+                        </h2>
+                    </div>
+                    <form action="" class="kl-newsletter-form">
+                        <div class="text-center mb-3">
+                            <label for="id-newsletter-email"><b>Abonnez-vous à la newsletter</b></label>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <input id="id-newsletter-email" type="email" class="form-control kl-form-control" placeholder="Votre adresse email…" aria-label="Votre adresse email…">
+                            </div>
+                            <div class="col-auto ps-0 ps-md-2">
+                                <button type="submit" class="kl-btn kl-btn-black">Je m’abonne</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="kl-footer-middle">
+                    <div class="row mb-5 mb-md-0">
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Qui sommes-nous ?</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Opérateur de stations de superchargeurs</a></li>
+                                <li><a href="#">Producteur d’énergie renouvelable</a></li>
+                                <li><a href="#">Fournisseur d’énergie renouvelable</a></li>
+                                <li><a href="#">Bureau d’étude et R&D</a></li>
+                                <li><a href="#">Notre équipe</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Notre modèle</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Unique en France</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Nos stations</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Trouver une station</a></li>
+                                <li><a href="#">Nos gammes de stations</a></li>
+                                <li><a href="#">Notre borne superchargeur</a></li>
+                                <li><a href="#">Héberger une station</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Tarifs</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Comparer nos offres</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Actualités</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Presse</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-2">
+                            <h6 class="kl-title-useful-links">Divers</h6>
+                            <ul class="kl-list-useful-links">
+                                <li><a href="#">Investisseurs</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Recrutement</a></li>
+                                <li><a href="#">Support / FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row pt-5 pt-md-3">
+                        <div class="col-12 col-md-auto text-center text-md-start kl-fs-0 kl-px-down-md-0">
+                            <a href="#" class="kl-btn kl-btn-sm kl-btn-black mx-2 mb-3 mb-md-0 mx-md-0 me-md-3">
+                                <img src="./images/App-Store-Badge.svg" alt="App Store Badge">
+                            </a>
+                            <a href="#" class="kl-btn kl-btn-sm kl-btn-black mx-2 mb-3 mb-md-0 mx-md-0">
+                                <img src="./images/Play-Store-Badge.svg" alt="Play Store Badge">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-auto ms-md-auto pt-3 pt-md-0 text-center text-md-end">
+                            <div class="kl-drop-language dropup">
+                                <button class="kl-btn-dropdown-language kl-btn kl-btn-sm kl-btn-black dropdown-toggle kl-font-tertiary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                                        <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(-2.5 -2.5)">
+                                        <path id="Tracé_14424" data-name="Tracé 14424" d="M15,9A6,6,0,1,1,9,3a6,6,0,0,1,6,6Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                        <path id="Tracé_14425" data-name="Tracé 14425" d="M3,18H15" transform="translate(0 -9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                        <path id="Tracé_14426" data-name="Tracé 14426" d="M14.4,3a9.18,9.18,0,0,1,2.4,6,9.18,9.18,0,0,1-2.4,6A9.18,9.18,0,0,1,12,9a9.18,9.18,0,0,1,2.4-6Z" transform="translate(-5.4 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                        </g>
+                                    </svg>
+                                    <span class="fw-normal">Français (France)</span>                                      
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Français (France)</a></li>
+                                    <li><a class="dropdown-item" href="#">English (England)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kl-footer-bottom" data-aos="fade-up" data-aos-duration="500">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-12 col-md order-md-1 text-center text-md-end">
+                            <strong class="d-inline-block mb-2 mb-md-0">Suivez-nous :</strong>
+                            <ul class="list-unstyled d-flex d-md-inline-flex justify-content-center mb-md-0 px-0 ps-md-1 pe-md-3">
+                                <li class="ms-1">
+                                    <a href="#" class="kl-btn-rounded kl-btn-black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13.271" height="24.778" viewBox="0 0 13.271 24.778">
+                                            <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M14.011,13.938,14.7,9.453H10.4V6.543a2.242,2.242,0,0,1,2.528-2.423H14.88V.3A23.854,23.854,0,0,0,11.408,0c-3.543,0-5.86,2.148-5.86,6.036V9.453H1.609v4.484H5.548v10.84H10.4V13.938Z" transform="translate(-1.609)" fill="#fff"/>
+                                        </svg>                                          
+                                    </a>
+                                </li>
+                                <li class="ms-1">
+                                    <a href="#" class="kl-btn-rounded kl-btn-black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.681" height="21.68" viewBox="0 0 21.681 21.68">
+                                            <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M4.853,21.681H.358V7.206H4.853ZM2.6,5.232A2.616,2.616,0,1,1,5.206,2.6,2.625,2.625,0,0,1,2.6,5.232ZM21.676,21.681H17.191V14.635c0-1.679-.034-3.833-2.337-3.833-2.337,0-2.7,1.824-2.7,3.712v7.167H7.669V7.206H11.98V9.181h.063A4.723,4.723,0,0,1,16.3,6.843c4.549,0,5.385,3,5.385,6.887v7.951Z" transform="translate(0 -0.001)" fill="#fff"/>
+                                        </svg>                                                                      
+                                    </a>
+                                </li>
+                                <li class="ms-1">
+                                    <a href="#" class="kl-btn-rounded kl-btn-black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.996" viewBox="0 0 20 19.996">
+                                            <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M10,7.109a5.127,5.127,0,1,0,5.127,5.127A5.118,5.118,0,0,0,10,7.109Zm0,8.46a3.333,3.333,0,1,1,3.333-3.333A3.339,3.339,0,0,1,10,15.568ZM16.529,6.9a1.2,1.2,0,1,1-1.2-1.2A1.193,1.193,0,0,1,16.529,6.9Zm3.4,1.214a5.918,5.918,0,0,0-1.615-4.19,5.956,5.956,0,0,0-4.19-1.615c-1.651-.094-6.6-.094-8.25,0A5.948,5.948,0,0,0,1.68,3.919,5.937,5.937,0,0,0,.065,8.108c-.094,1.651-.094,6.6,0,8.25a5.917,5.917,0,0,0,1.615,4.19,5.964,5.964,0,0,0,4.19,1.615c1.651.094,6.6.094,8.25,0a5.918,5.918,0,0,0,4.19-1.615,5.956,5.956,0,0,0,1.615-4.19c.094-1.651.094-6.595,0-8.245ZM17.792,18.129a3.374,3.374,0,0,1-1.9,1.9c-1.316.522-4.439.4-5.894.4s-4.582.116-5.894-.4a3.374,3.374,0,0,1-1.9-1.9c-.522-1.316-.4-4.439-.4-5.894s-.116-4.582.4-5.894a3.374,3.374,0,0,1,1.9-1.9c1.316-.522,4.439-.4,5.894-.4s4.582-.116,5.894.4a3.374,3.374,0,0,1,1.9,1.9c.522,1.316.4,4.439.4,5.894S18.314,16.818,17.792,18.129Z" transform="translate(0.005 -2.238)" fill="#fff"/>
+                                        </svg>                                          
+                                    </a>
+                                </li>
+                                <li class="ms-1">
+                                    <a href="#" class="kl-btn-rounded kl-btn-black">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13.846" viewBox="0 0 20 13.846">
+                                            <g id="Icon_ionic-ios-mail" data-name="Icon ionic-ios-mail" transform="translate(-3.375 -7.875)">
+                                            <path id="Tracé_13741" data-name="Tracé 13741" d="M23.212,10.343l-5.173,5.269a.093.093,0,0,0,0,.135l3.62,3.856a.624.624,0,0,1,0,.885.627.627,0,0,1-.885,0l-3.606-3.841a.1.1,0,0,0-.139,0l-.88.894a3.871,3.871,0,0,1-2.76,1.163,3.949,3.949,0,0,1-2.817-1.2l-.846-.861a.1.1,0,0,0-.139,0L5.981,20.488a.627.627,0,0,1-.885,0,.624.624,0,0,1,0-.885l3.62-3.856a.1.1,0,0,0,0-.135L3.538,10.343a.1.1,0,0,0-.163.067V20.954a1.543,1.543,0,0,0,1.538,1.538H21.837a1.543,1.543,0,0,0,1.538-1.538V10.411A.1.1,0,0,0,23.212,10.343Z" transform="translate(0 -0.771)" fill="#fff"/>
+                                            <path id="Tracé_13742" data-name="Tracé 13742" d="M13.644,16.678a2.614,2.614,0,0,0,1.88-.788l7.543-7.678a1.511,1.511,0,0,0-.952-.337H5.178a1.5,1.5,0,0,0-.952.337l7.543,7.678A2.614,2.614,0,0,0,13.644,16.678Z" transform="translate(-0.269)" fill="#fff"/>
+                                            </g>
+                                        </svg>                                          
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md order-md-0">
+                            <ul class="kl-list-legal-links justify-content-center justify-content-lg-start">
+                                <li>
+                                    <a href="#">Mentions légales</a>
+                                </li>
+                                <li>
+                                    <a href="#">RGPD</a>
+                                </li>
+                                <li>
+                                    <a href="#">© Dream Energy 2022</a>
+                                </li>                                      
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kl-gradient-animation"></div>
+        </footer>
+    </div>
+
+    <!-- toast infos  -->
+    <div class="kl-toast-infos">
+        <button class="btn p-0 kl-toast-infos-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.414" height="10.414" viewBox="0 0 10.414 10.414">
+                <g id="Groupe_1746" data-name="Groupe 1746" transform="translate(0.707 0.707)">
+                <path id="Tracé_14427" data-name="Tracé 14427" d="M10.5,19.5l9-9" transform="translate(-10.5 -10.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                <path id="Tracé_14428" data-name="Tracé 14428" d="M19.5,19.5l-9-9" transform="translate(-10.5 -10.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                </g>
+            </svg>
+        </button>
+        <div class="d-flex flex-sm-column align-items-center text-sm-center">
+            <div class="me-2 me-sm-0 mb-0 mb-sm-2">
+                <strong>Hébergez une station de superchargeur.</strong>
+            </div>
+            <a href="#" class="kl-btn kl-btn-white flex-shrink-0 ms-auto ms-sm-0">Proposer un site</a>
+        </div>
+    </div>
+
+</main>
+
+<!-- scripts -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

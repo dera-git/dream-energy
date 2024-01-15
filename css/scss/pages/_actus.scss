@@ -1,0 +1,138 @@
+
+/* globals */
+
+%btn_transparent{
+  background: transparent;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.kl-img-cover{
+  object-fit: cover;
+}
+
+/* section */
+.kl-section-actus-news{
+  padding-bottom: 144px;
+  @include media-breakpoint-down(md){
+    padding-bottom: 61px;
+  }
+}
+
+.kl-title-h1-gradient-df{
+  position: relative;
+  display: inline;
+  z-index: 1;
+  .kl-gradient-animation{
+    position: absolute;
+    z-index: -1;
+    /* parms (height, bottom, left, right) */
+    @include gradient_title_animation(15, 6, -2, -5);
+    @include media-breakpoint-down(md){
+      @include gradient_title_animation(8, 0, 0, -3);
+    }
+  }
+}
+
+.kl-mb-30{
+  margin-bottom: 30px !important;
+}
+
+.kl-badge-df{
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: $regular;
+  color: $black;
+  &.kl-radius{
+    border-radius: 17px;
+    padding: 6px 10px;
+  }
+}
+
+.kl-badge-group{
+  .kl-badge-df{
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.kl-btn-read-more{
+  @extend %btn_transparent;
+  font-size: 15px;
+  font-weight: $regular;
+  color: $black;
+  line-height: 1.2em;
+  .kl-icon{
+    margin-left: 18px;
+    width: 9px;
+    img, svg{
+      object-fit: cover;
+      width: 9px;
+      height: 9px;
+    }
+  }
+}
+
+.kl-text-18{
+  p{
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+}
+
+.kl-section-actus-03{
+  @include media-breakpoint-down(sm){
+    margin-bottom: 215px !important;
+  }
+}
+
+.kl-section-actus-blog{
+  padding-bottom: 30px;
+  @include media-breakpoint-up(md){
+    padding-bottom: 85px;
+  }
+}
+
+.kl-content-article-actus{
+  p{
+    margin-bottom: 24px;
+  }
+  @include media-breakpoint-up(md){
+    p{
+      margin-bottom: 26px;
+    }
+  }
+}
+
+.kl-w-25{
+  svg{
+    max-width: 13px;
+  }
+  &.kl-fb{
+    svg{
+      max-width: 8px;
+    }
+  }
+}
+
+.kl-section-article-content{
+  padding-bottom: 25px;
+}
+
+.kl-section-blog-article{
+  padding: 30px 0 75px;
+  @include media-breakpoint-down(sm){
+    padding: 30px 0 35px;
+  }
+}
+
+.kl-actus-heros{
+  overflow: hidden;
+  img{
+    min-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+}

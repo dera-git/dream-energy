@@ -1,0 +1,84 @@
+.kl-p-main-cust{
+  padding-top: 67px;
+  @include media-breakpoint-down(md){
+    padding-top: 140px;
+  }
+}
+
+.kl-wrap-gradient-operator{
+  z-index: 1;
+  position: relative;
+  .kl-gradient-img-wrap{
+    background: url(../images/about/bg-gradient-operator.png) no-repeat bottom/100% 100%;
+    text-align: center;
+    max-height: 315px;
+    overflow: hidden;
+    img{
+      display: inline-block;
+    }
+  }
+  @include media-breakpoint-up(md){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    .kl-gradient-img-wrap{
+      width: 50%;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      &.kl-right-md--70 {
+        right: -70px;
+      }
+    }
+  }
+}
+
+.kl-section-about-operateur{
+  padding-bottom: 35px;
+  @include media-breakpoint-down(md){
+    padding-bottom: 18px;
+  }
+}
+
+.kl-section-about-hero-img{
+  padding: 35px 0 50px;
+  @include media-breakpoint-down(md){
+    padding: 20px 0 40px;
+  }
+}
+
+@include media-breakpoint-down(md){
+  .kl-title-h2-resp{
+    h2{
+      font-size: 20px;
+    }
+  }
+}
+
+.kl-section-timeline{
+  padding: 50px 0 170px;
+  @include media-breakpoint-down(lg){
+    padding: 40px 0 100px;
+  }
+  @include media-breakpoint-down(md){
+    padding: 30px 0 40px;
+  }
+}
+
+.kl-mention-content{
+  p{
+    margin-bottom: 24px;
+  }
+}
+
+.kl-section-contact{
+  .kl-contact-wrap{
+    padding: 36px 0 75px;
+    @include media-breakpoint-down(sm){
+      padding: 26px 0 30px;
+    }
+  }
+}

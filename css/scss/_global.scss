@@ -1,0 +1,550 @@
+body {
+    color: $black;
+    font-size: 15px;
+    line-height: 1.66;
+    font-family: $font_primary;
+    &.kl-menu-is-open {
+        @include media-breakpoint-down(lg) {
+            overflow: hidden;
+        }
+    }
+}
+
+.main {
+    position: relative;
+}
+
+.kl-scroll-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.c-scrollbar {
+    z-index: 1030;
+}
+
+.modal,
+.kl-scroll-thin {
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $gray_primary;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($black, 0.5);
+    }
+    scrollbar-width: thin; //for firefox
+}
+
+.kl-hide-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;  //IE and Edge
+    scrollbar-width: none;  //Firefox
+}
+
+::selection {
+    color: $white;
+    background: $green_primary;
+}
+
+a {
+    color: $green_primary;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+    &:hover {
+        color: $green_tertiary;
+        text-decoration: none;
+    }
+}
+
+//font family
+.kl-font-primary {
+    font-family: $font_primary;
+}
+.kl-font-secondary {
+    font-family: $font_secondary;
+}
+.kl-font-tertiary {
+    font-family: $font_tertiary;
+}
+
+.kl-fw-medium {
+    font-weight: 500 !important;
+}
+
+.kl-min-h-0 {
+    min-height: 0 !important;
+}
+
+//bg-color 
+@each $color, $value in $theme_colors {
+    .kl-bg-#{$color} {
+      @include bg_variant($value);
+    }
+}
+
+//color 
+@each $color, $value in $theme_colors {
+    .kl-color-#{$color} {
+      @include color_variant($value);
+    }
+}
+
+//border radius 
+@each $val, $value in $border_radius_value {
+    .kl-border-radius-#{$val} {
+      @include border_radius($value);
+    }
+}
+
+//max width 
+@each $val, $value in $max_value {
+    .kl-max-w-#{$val} {
+      @include max_width($value);
+    }
+}
+
+//line-height
+@each $val, $value in $line_height_value {
+    .kl-lh-#{$val} {
+      @include line_height($value);
+    }
+}
+
+//z-index
+@each $val, $value in $z_index_value {
+    .kl-z-index-#{$val} {
+      @include z_index($value);
+    }
+}
+
+//heading
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font_secondary;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: $semi_bold;
+    line-height: 0.98;
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+        font-weight: $bold;
+        line-height: 1.33;
+    }
+}
+h2 {
+    font-size: 30px;
+    font-weight: $bold;
+    line-height: 1.33;
+}
+h3 {
+    font-size: 20px;
+    font-weight: $bold;
+    line-height: 1.5;
+}
+h4 {
+    font-size: 18px;
+    font-weight: $bold;
+}
+h5 {
+    font-size: 17px;
+    font-weight: $bold;
+}
+h6 {
+    font-size: 15px;
+    font-weight: $bold;
+}
+
+//text
+.kl-title-hero {
+    h1 {
+        strong, b {
+            font-weight: $extra_bold;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 26px;
+            line-height: 1.23;
+        }
+    }
+}
+.kl-title-section {
+    h2 {
+        display: inline;
+        position: relative;
+        .kl-gradient-animation {
+            z-index: -1;
+        }
+    }
+}
+
+
+.kl-fs-0 {
+    font-size: 0;
+}
+
+.kl-fs-8 {
+    font-size: 8px !important;
+    line-height: 1.5;
+}
+
+.kl-fs-10 {
+    font-size: 10px !important;
+    line-height: 1.5;
+}
+
+small,
+.kl-fs-12 {
+    font-size: 12px !important;
+    line-height: 1.58;
+}
+
+.kl-fs-13 {
+    font-size: 13px !important;
+    line-height: 1.38;
+}
+
+.kl-fs-16 {
+    font-size: 16px !important;
+    line-height: 1;
+}
+
+.kl-fs-17 {
+    font-size: 17px !important;
+    line-height: 1.6;
+}
+
+.kl-fs-25 {
+    font-size: 25px !important;
+    line-height: 1.16em;
+}
+
+.kl-fs-47 {
+    font-size: 47px !important;
+    line-height: 1.34em;
+}
+
+//container
+.kl-container-xl-1120 {
+    @include media-breakpoint-up(xl) {
+        max-width: 1120px;
+    }
+}
+.kl-gx-16 {
+    &.container {
+        --bs-gutter-x: 32px;
+    }
+    --bs-gutter-x: 16px;
+}
+
+//animation gradient
+.kl-gradient-animation {
+    display: block;
+    height: 15px;
+    overflow: hidden;
+    position: relative;
+    &.aos-init {
+        width: 0;
+        transition-property: opacity, width;
+        &.aos-animate {
+            width: 100%;
+        }
+    }
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+    &::before {
+        background: linear-gradient(to right, #baf382, #baf382 27%, #00b4cd 66%, #fff 169%);
+        animation: opacity_anim 2s ease-in-out 0s infinite alternate;
+    }
+    &::after {
+        background: linear-gradient(to left, #baf382, #baf382 27%, #00b4cd 66%, #fff 169%);
+        animation: opacity_anim 2s ease-in-out calc(-1 * 2s) infinite alternate;
+    }
+}
+
+.kl-underline-gradient-animate {
+    position: relative;
+    .kl-gradient-animation {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -3px;
+    }
+}
+
+@keyframes opacity_anim {
+    0%{opacity: 1.0}
+    100%{opacity: 0.0}
+}
+
+.modal-backdrop {
+    &.show {
+        opacity: .9;
+    }
+}
+.kl-modal-video {
+    @include media-breakpoint-up(md) {
+        .modal-dialog {
+            padding-top: 32px;
+        }
+        .kl-btn-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(100%, -100%);
+        }
+    }
+}
+
+.kl-toast-infos {
+    background-color: rgba($black, 0.9);
+    border-radius: 10px;
+    color: $white;
+    font-family: $font_secondary;
+    font-size: 16px;
+    line-height: 1.38;
+    padding: 21px 33px 20px 23px;
+    position: fixed;
+    left: 6px;
+    right: 6px;
+    bottom: 10px;
+    z-index: 1020;
+    transition: all .4s ease-in-out;
+    &.kl-closed {
+        opacity: 0;
+        right: 90%;
+        bottom: -110%;
+    }
+    .kl-toast-infos-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+    @include media-breakpoint-up(sm) {
+        max-width: 235px;
+        padding: 21px 29px 16px;
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        &.kl-closed {
+            opacity: 0;
+            right: 20px;
+        }
+    }
+    @include media-breakpoint-down(xs_375) {
+        padding: 15px 28px 15px 12px;
+        .kl-toast-infos-close {
+            right: 10px;
+        }
+    }
+}
+.kl-toast-infos-close {
+    line-height: 0;
+    transition: all .3s ease-in-out;
+    &:active,
+    &:focus {
+        border-color: transparent !important;
+        outline: none !important;
+    }
+    &:hover {
+        transform: rotate(-90deg);
+    }
+}
+
+.kl-pagination-df{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(md){
+        .kl-text-paginate{
+            display: none;
+        }
+    }
+    @media (max-width: 375px) {
+        .kl-btn{
+            padding: 10px 15px 9px;
+            border-radius: 15px;
+        }
+    }
+}
+
+.kl-pagination-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 10px;
+    li{
+        margin: 0 16px;
+        &.active{
+            .kl-pagination-link, a{
+                background: transparent;
+                font-family: $font_tertiary;
+                font-weight: $bold;
+            }
+        }
+    }
+    .kl-pagination-link, a{
+        background: $blue_light;
+        padding: 11px 9px;
+        border-radius: 18px;
+        color: $black;
+        transition: all ease 0.5s;
+        font-family: $font_secondary;
+        &:hover{
+            background: transparent;
+        }
+    }
+    @media (max-width: 375px) {
+        li{
+            margin: 0 8px;
+        }
+    }
+}
+
+.kl-pt-main-df{
+    padding-top: 142px !important;
+}
+
+.kl-gy-16{
+    --bs-gutter-y: 16px !important;
+}
+.kl-gy-40{
+    --bs-gutter-y: 40px !important;
+}
+.kl-gy-64{
+    --bs-gutter-y: 64px !important;
+}
+.kl-gy-74{
+    --bs-gutter-y: 74px !important;
+}
+.kl-gy-91{
+    --bs-gutter-y: 91px !important;
+}
+
+.kl-pb-3{
+    padding-bottom: 3px !important;
+}
+.kl-w-25{
+    width: 25px !important;
+}
+.kl-w-158{
+    width: 158px !important;
+}
+.kl-h-25{
+    height: 25px !important;
+}
+
+@each $space in $spaceamounts_side {
+    @each $side in $sides {
+        .kl-m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .kl-p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm){
+    .kl-gx-sm-16{
+        --bs-gutter-x: 16px !important;
+    }
+}
+
+@include media-breakpoint-up(md){
+    .kl-pr-md-0{
+        padding-right: 0px !important;
+    }
+    .kl-mt-md-0{
+        margin-top: 0px !important;
+    }
+    .kl-mb-md-0{
+        margin-bottom: 0px !important;
+    }
+    .kl-mt-md-56{
+        margin-top: 56px !important;
+    }
+    .kl-mb-md-30{
+        margin-bottom: 30px !important;
+    }
+    .kl-mb-md-40{
+        margin-bottom: 40px !important;
+    }
+    .kl-mb-md-56{
+        margin-bottom: 56px !important;
+    }
+    .kl-mb-md-60{
+        margin-bottom: 60px !important;
+    }
+    .kl-mb-md-64{
+        margin-bottom: 64px !important;
+    }
+
+    .kl-pl-md-40{
+        padding-left: 40px !important;
+    }
+    .kl-mt-md-75{
+        margin-top: 75px !important;
+    }
+    .kl-mb-md-75{
+        margin-bottom: 75px !important;
+    }
+    .kl-mb-md-80{
+        margin-bottom: 80px !important;
+    }
+    .kl-mt-md-135{
+        margin-top: 135px !important;
+    }
+    .kl-pr-md-150{
+        padding-right: 150px !important;
+    }
+
+    .kl-pt-md-40{
+        padding-top: 40px !important;
+    }
+    .kl-left-md-50{
+        left: 50px;
+    }
+}
+
+@include media-breakpoint-up(lg){
+    .kl-mb-lg-80{
+        margin-bottom: 80px !important;
+    }
+    .kl-mb-lg-90{
+        margin-bottom: 90px !important;
+    }
+    .kl-mb-lg-100{
+        margin-bottom: 100px !important;
+    }
+
+    .kl-gx-lg-36{
+        --bs-gutter-x: 36px !important;
+    }
+
+    .kl-container-lg-930{
+        max-width: 930px;
+    }
+}
+
+@include media-breakpoint-up(xl){
+    .kl-pl-xl-92{
+        padding-left: 92px !important;
+    }
+}
+.kl-h-180{
+    img{
+        height: 180px;
+        object-fit: cover;
+    }
+}

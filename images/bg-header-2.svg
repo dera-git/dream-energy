@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1088" height="294" viewBox="0 0 1088 294">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2212" data-name="Rectangle 2212" width="702" height="173" transform="translate(289)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#209f97"/>
+      <stop offset="0.611" stop-color="#c5eef4"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="Groupe_1821" data-name="Groupe 1821" transform="translate(-96 19)" opacity="0.5">
+    <g id="Groupe_de_masques_154" data-name="Groupe de masques 154" clip-path="url(#clip-path)">
+      <g id="c" transform="translate(289.325 -528.352)">
+        <g id="Groupe_1735" data-name="Groupe 1735" transform="translate(0 0)">
+          <path id="Tracé_13824" data-name="Tracé 13824" d="M468.73,359.266a230.885,230.885,0,0,1-117.358-32.09,230.9,230.9,0,0,1-117.361,32.09C104.771,359.266,0,253.461,0,122.945,0,318.521,157,477.068,350.662,477.068c178.851,0,326.322-135.254,347.853-309.982-20.49,109.394-115.5,192.18-229.785,192.18" transform="translate(0 224.284)" fill="#1dc9d0"/>
+          <path id="Tracé_13825" data-name="Tracé 13825" d="M236.321,506.644A237.579,237.579,0,0,0,354.84,475.023c-70.369-40.335-117.8-115.255-117.8-201.253s47.433-160.917,117.8-201.25A237.579,237.579,0,0,0,236.321,40.9C105.805,40.9,0,145.158,0,273.77S105.805,506.644,236.321,506.644" transform="translate(0 76.906)" fill="#00766f"/>
+          <path id="Tracé_13826" data-name="Tracé 13826" d="M234.011,117.8a230.893,230.893,0,0,1,117.361,32.09A230.883,230.883,0,0,1,468.73,117.8c114.286,0,209.295,82.786,229.785,192.18C676.986,135.253,529.515,0,350.662,0,157,0,0,158.546,0,354.121,0,223.606,104.771,117.8,234.011,117.8" transform="translate(0 0.001)" fill="#54a020"/>
+          <path id="Tracé_13827" data-name="Tracé 13827" d="M241.712,40.9A237.568,237.568,0,0,0,123.195,72.52c70.366,40.335,117.8,115.255,117.8,201.252s-47.433,160.917-117.8,201.25a237.569,237.569,0,0,0,118.517,31.621c115.414,0,211.36-81.576,232.052-189.377a335.235,335.235,0,0,0,0-86.991C453.072,122.476,357.125,40.9,241.712,40.9" transform="translate(224.751 76.904)" fill="#a9f571"/>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_1803" data-name="Rectangle 1803" width="1088" height="294" transform="translate(96 -19)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

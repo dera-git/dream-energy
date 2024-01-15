@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="178" viewBox="0 0 178 178">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a9f571"/>
+      <stop offset="0.611" stop-color="#a9f571" stop-opacity="0.373"/>
+      <stop offset="1" stop-color="#a9f571" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Groupe_1942" data-name="Groupe 1942" transform="translate(-29 -260)">
+    <g id="Groupe_1944" data-name="Groupe 1944">
+      <circle id="Ellipse_261" data-name="Ellipse 261" cx="89" cy="89" r="89" transform="translate(29 260)" fill="url(#radial-gradient)"/>
+      <g id="solar_energy" data-name="solar energy" transform="translate(-2368 -314.23)">
+        <g id="Groupe_1790" data-name="Groupe 1790" transform="translate(2456 651.359)">
+          <path id="Tracé_14430" data-name="Tracé 14430" d="M2461.536,735.494l-5.463,24.194a2.9,2.9,0,0,0,2.832,3.543H2513.1a2.9,2.9,0,0,0,2.817-3.607l-6.048-24.194a2.9,2.9,0,0,0-2.817-2.2h-42.679A2.9,2.9,0,0,0,2461.536,735.494Z" transform="translate(-2456 -733.23)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <g id="Groupe_1789" data-name="Groupe 1789" transform="translate(17.419 0)">
+            <line id="Ligne_55" data-name="Ligne 55" x1="4.839" y2="30" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <line id="Ligne_56" data-name="Ligne 56" x2="4.839" y2="30" transform="translate(20.323)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <line id="Ligne_57" data-name="Ligne 57" x2="52.258" transform="translate(3.871 14.516)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <g id="Groupe_1791" data-name="Groupe 1791" transform="translate(2484.065 681.359)">
+          <line id="Ligne_58" data-name="Ligne 58" y1="3.871" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <line id="Ligne_59" data-name="Ligne 59" y1="3.871" transform="translate(3.871 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </g>
+        <line id="Ligne_60" data-name="Ligne 60" y1="5.806" transform="translate(2486 625.23)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Tracé_14431" data-name="Tracé 14431" d="M2528,677.811a12.581,12.581,0,1,1,25.161,0" transform="translate(-54.58 -30.322)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_61" data-name="Ligne 61" x1="4.106" y1="4.106" transform="translate(2470.261 631.75)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_62" data-name="Ligne 62" x1="5.806" transform="translate(2463.742 647.488)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_63" data-name="Ligne 63" x1="3.871" transform="translate(2465.678 647.488)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_64" data-name="Ligne 64" x1="3.576" y1="1.481" transform="translate(2467.225 639.711)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_65" data-name="Ligne 65" x1="1.481" y1="3.576" transform="translate(2478.223 628.713)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_66" data-name="Ligne 66" y1="4.106" x2="4.106" transform="translate(2497.633 631.75)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_67" data-name="Ligne 67" x2="5.806" transform="translate(2502.452 647.488)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_68" data-name="Ligne 68" x2="3.871" transform="translate(2502.452 647.488)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_69" data-name="Ligne 69" y1="1.481" x2="3.576" transform="translate(2501.2 639.711)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <line id="Ligne_70" data-name="Ligne 70" y1="3.576" x2="1.481" transform="translate(2492.296 628.713)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

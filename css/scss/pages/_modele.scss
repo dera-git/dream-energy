@@ -1,0 +1,36 @@
+.kl-h-xs-190{
+	img{
+		@include media-breakpoint-down(sm){
+			height: 190px !important;
+		}
+	}
+}
+.kl-section-hero-page{
+	min-height: 502px !important;
+}
+.kl-card-model-modif{
+	.kl-card-model-body{
+		h3{
+			margin-bottom: 30px;
+			@include media-breakpoint-down(md){
+				margin-bottom: 25px;
+    			margin-top: 28px;
+			}
+		}
+		p{
+			& + p{
+				margin-top: 20px;
+			}
+		}
+	}
+}
+.kl-section-electricity-producer{
+	.kl-text-with-btn{
+		.kl-gradient-animation{
+			@include media-breakpoint-down(md){
+				bottom: auto;
+    			top: 25px;
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+.kl-section-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 647px;
+    @include media-breakpoint-up(lg) {
+        min-height: calc(100vh - 89px);
+    }
+    .kl-btn-outline-white {
+        svg path {
+            transition: all .15s ease-in-out;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            svg path {
+                fill: $black;
+                stroke: $black;
+            }
+        }
+    }
+}
+.kl-hero-video {
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 43px 0;
+    position: relative;
+    @include media-breakpoint-up(md) {    
+        padding: 63px 0;    
+    }
+    .kl-hero-bg-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+    .kl-hero-video-overlay {
+        mix-blend-mode: multiply;
+        background-blend-mode: multiply;
+        background-image: linear-gradient(to bottom, $green_primary, $green_primary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+.kl-hero-bg-video {
+    opacity: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.kl-hero-video-content {
+    margin-top: auto ;
+    padding: 0 28px;
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-up(xl) {
+        padding: 0 92px;
+    }
+}
+
+.kl-title-hero {
+    h1 {
+        span {
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: "";
+                background-image: radial-gradient(circle at 2% 50%, #a9f571, #00b4cd 39%, #5fc6ce 57%, #6dd8e0 101%);
+                height: 8px;
+                position: absolute;
+                left: 0;
+                right: -5px;
+                bottom: 0px;
+                z-index: -1;
+            }
+            @include media-breakpoint-up(md) {
+                &::after {
+                    display: none;
+                }
+                background-image: linear-gradient(to right, #d0f382, #baf382 25%, #1dc9d0 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    &.kl-underline-span {
+        h1 {
+            span {
+                @include media-breakpoint-up(md) {
+                    background: none;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: $white;
+                }
+            }
+            .kl-underline-gradient-animate {
+                .kl-gradient-animation {
+                    display: none;
+                    @include media-breakpoint-up(md) {
+                        display: inline-block;
+                        bottom: 7px;
+                        &::before {
+                            animation-iteration-count: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

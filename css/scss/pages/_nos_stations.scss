@@ -1,0 +1,37 @@
+.kl-height-xs-192{
+	img{
+		@include media-breakpoint-down(sm){
+			height: 192px;
+		}
+	}
+}
+.kl-title-intro-station{
+	.kl-gradient-animation{
+		bottom: -3px;
+		@include media-breakpoint-down(md){
+			bottom: 4px;
+		}
+	}
+	.kl-underline-gradient-animate{
+		display: inline-block;
+	}
+	&.kl-title-intro h3{
+		@include media-breakpoint-down(md){
+			margin-top: 15px;
+		}
+	}
+}
+.kl-section-form-station{
+	padding: 35px 0 75px 0;
+	background: $blue_light;
+}
+.kl-form-station{
+	width: 352px;
+    margin: auto;
+    @include media-breakpoint-down(lg){
+		width: 100%;
+	}
+}
+.kl-no-resize{
+	resize: none;
+}

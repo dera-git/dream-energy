@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="178" viewBox="0 0 178 178">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#209f97"/>
+      <stop offset="0.611" stop-color="#c5eef4"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="Groupe_2128" data-name="Groupe 2128" transform="translate(-23 -2252)">
+    <circle id="Ellipse_294" data-name="Ellipse 294" cx="89" cy="89" r="89" transform="translate(23 2252)" fill="url(#radial-gradient)"/>
+    <g id="hydroelectric" transform="translate(-1478 1237.77)">
+      <path id="Tracé_14432" data-name="Tracé 14432" d="M1560,1131.295l.034-58.064h5.772v5.807l6.774,48.387" transform="translate(0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Ligne_71" data-name="Ligne 71" x2="7.742" transform="translate(1594.839 1127.424)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Ligne_72" data-name="Ligne 72" x2="1.935" transform="translate(1589.032 1127.424)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14433" data-name="Tracé 14433" d="M1736,1285.1a3.871,3.871,0,0,1,7.742,0" transform="translate(-133.419 -157.677)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14434" data-name="Tracé 14434" d="M1560,1313.23c3,0,3,1.936,6,1.936s3-1.936,5.994-1.936,3,1.936,6,1.936,3-1.936,6-1.936,3,1.936,6,1.936,3-1.936,6-1.936,3,1.936,6,1.936,3-1.936,6-1.936,3,1.936,6,1.936,3-1.936,6.008-1.936" transform="translate(0 -181.935)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14435" data-name="Tracé 14435" d="M1768,1288.133a2.9,2.9,0,0,1,5.807,0" transform="translate(-157.677 -160.709)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14436" data-name="Tracé 14436" d="M1659.742,1269.1a3.871,3.871,0,0,0-7.742,0" transform="translate(-69.742 -145.548)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14437" data-name="Tracé 14437" d="M1633.806,1272.133a2.9,2.9,0,0,0-5.806,0" transform="translate(-51.548 -148.58)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14438" data-name="Tracé 14438" d="M1604,1121.23h36.774v2.9" transform="translate(-33.355 -36.387)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Ligne_73" data-name="Ligne 73" y2="1.935" transform="translate(1593.871 1084.843)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="Ligne_74" data-name="Ligne 74" y2="1.935" transform="translate(1580.323 1084.843)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14439" data-name="Tracé 14439" d="M1608,1145.23h30c10.645,0,11.577,20.16,11.61,33.871" transform="translate(-36.387 -54.58)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14440" data-name="Tracé 14440" d="M1676.011,1145.23c10.645,0,11.61,20.323,11.61,32.9" transform="translate(-87.944 -54.58)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14441" data-name="Tracé 14441" d="M1620.011,1145.23c9.446,0,11.61,15.484,11.61,29.032" transform="translate(-45.492 -54.58)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14442" data-name="Tracé 14442" d="M1684,1266.069a4.839,4.839,0,1,1,9.677,0" transform="translate(-94 -142.516)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_14443" data-name="Tracé 14443" d="M1600,1079.037h37.742l.034-5.807h5.772v5.807l6.774,48.387" transform="translate(-30.323)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

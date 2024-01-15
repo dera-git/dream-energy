@@ -1,0 +1,261 @@
+.kl-size-sm-h2{
+	h2{
+		@include media-breakpoint-down(md){
+			font-size: 20px;
+    		line-height: 30px;
+		}
+	}
+}
+.kl-size-img-443{
+	img{
+		@include media-breakpoint-up(lg){
+			width: 443px;
+			margin-left: auto;
+		}
+	}
+}
+.kl-pl-mob-0{
+	@media (max-width: 320.98px){
+		padding-right: 0 !important;
+	}
+}
+.kl-title-about03{
+	width: 655px;
+	@include media-breakpoint-down(lg){
+		width: 100%;
+	}
+	@include media-breakpoint-down(md){
+		width: 390px;
+	}
+	@media (max-width: 425.98px){
+		width: 100%;
+	}
+	h1{
+		.kl-title-intro .kl-gradient-animation {
+		    bottom: -3px;
+		}
+		.kl-gradient-animation{
+			&:before,
+			&:after{
+				@include media-breakpoint-down(lg){
+					width: 100%;
+					height: 15px;
+					bottom: -2px;
+				    top: auto;
+				    z-index: -1;
+			    }
+			    @include media-breakpoint-down(md){
+					height: 8px;
+    				bottom: 5px;
+			    }
+			}
+		}
+		.kl-no-desk{
+			bottom: 0;
+		    height: auto;
+		    z-index: 1;
+		    overflow: visible;
+		    width: auto;
+		    position: relative;
+			&:before,
+			&:after{
+				@include media-breakpoint-up(lg){
+					display: none;
+				}
+			}
+		}
+	}
+}
+.kl-title-with-icon{
+	margin: 50px 0px 45px;
+	@include media-breakpoint-down(md){
+		margin: 70px 0px 36px !important;
+	}
+	img{
+		position: absolute;
+		left: -67px;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    z-index: -1;
+	    @include media-breakpoint-down(md){
+			left: -28px;
+		}
+	}
+	h3{
+		margin-bottom: 0;
+		padding-left: 92px;
+		z-index: 1;
+		@include media-breakpoint-down(md){
+			padding-left: 120px;
+		}
+	}
+}
+.kl-row-text-model{
+	h2{
+		margin-bottom: 0;
+	}
+	p{
+		margin-bottom: 0;
+		& + p{
+			margin-top: 25px;
+		}
+	}
+}
+.kl-image-bg-in{
+	width: 100%;
+	height: 407px;
+	border-radius: 10px;
+	@include media-breakpoint-down(xl){
+		height: 349px;
+	}
+	@include media-breakpoint-down(lg){
+		height: 260px;
+	}
+	@include media-breakpoint-down(md){
+		background-size: cover !important;
+	}
+	@media (max-width: 425.98px){
+	    height: 184px;
+	}
+}
+.kl-row-text-img{
+	h3{
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 0;
+	}
+	img{
+		border-radius: 10px;
+		object-fit: cover;
+		height: auto;
+		@include media-breakpoint-down(lg){
+			width: 100%;
+		}
+	}
+}
+.kl-section-systemes-stockage{
+	margin-top: 110px;
+	margin-bottom: 165px;
+	@include media-breakpoint-down(lg){
+		margin-bottom: 120px;
+	}
+	@include media-breakpoint-down(md){
+		margin-top: 35px;
+		margin-bottom: 100px;
+	}
+}
+.kl-section-centrales-slick{
+	overflow: hidden;
+	margin-bottom: 122px;
+}
+.kl-block-slick{
+	position: relative;
+	padding-bottom: 90px;
+	padding-top: 35px;
+	@include media-breakpoint-down(md){
+		padding-top: 30px;
+		padding-bottom: 75px;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		background: $blue_light;
+		width: 100vw;
+		height: 100%;
+		left: 92px;
+		top: -26px;
+		border-radius: 10px 0 0 10px;
+    	z-index: -1;
+    	@include media-breakpoint-down(md){
+			top: -35px;
+			left: 72px;
+		}
+	}
+	.slick-list.draggable{
+		margin-left: -8px;
+		margin-right: -8px;
+		overflow: visible !important;
+	}
+}
+.kl-slick-img-model{
+	.slick-dots{
+		bottom: -138px;
+		@include media-breakpoint-down(md){
+			bottom: -124px;
+		}
+		li{
+			button{
+				background: $gray_secondary;
+			    height: 3px;
+			    border-radius: 15px;
+			    padding: 0;
+			    position: relative;
+    			top: 8px;
+				&:before{
+					display: none;
+				}
+			}
+			&.slick-active{
+				button{
+					background: $black;
+				}
+			}
+		}
+	}
+}
+.kl-slick-item-model{
+	width: 460px !important;
+	padding: 0 8px;
+	@include media-breakpoint-down(lg){
+		width: 314px !important;
+	}
+	@media (max-width: 320px){
+		width: 275px !important;
+	}
+	img{
+		border-radius: 10px;
+	}
+	h3{
+		padding-left: 15px;
+	}
+}
+.kl-slick-previous,
+.kl-slick-next{
+	position: relative;
+	border: none;
+	background: transparent;
+	padding: 8px 12px;
+    display: inline-block;
+	&:before{
+		content: '';
+		position: absolute;
+		background-position: center !important;
+		background-size: contain !important;
+		width: 24px;
+		height: 15px;
+		bottom: 0;
+	}
+}
+.kl-slick-arrow{
+	padding-left: 0;
+	list-style: none;
+	margin-top: -11px;
+}
+.kl-slick-next{
+	&:before{
+		background: url('../images/Icon-arrow-left.svg') no-repeat;
+		right: 0;
+	}
+}
+.kl-slick-previous{
+	&:before{
+		background: url('../images/Icon-arrow-right.svg') no-repeat;
+		left: 0;
+	}
+}
+.kl-section-centrales-hydrauliques{
+	.kl-title-with-icon {
+	    margin: 50px 0px 74px;
+	}
+}

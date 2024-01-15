@@ -1,0 +1,132 @@
+.kl-footer {
+    margin-top: auto;
+    padding-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    .kl-gradient-animation {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.kl-footer-top {
+    padding: 73px 0;
+    .kl-title-section {
+        margin-bottom: 36px;
+        h2 {
+            .kl-gradient-animation {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 28px;
+            }
+        }        
+    }
+    @include media-breakpoint-up(md) {
+        padding: 58px 0;
+        .kl-title-section {
+            margin-bottom: 90px;
+            h2 {
+                .kl-gradient-animation {
+                    left: -6px;
+                }
+            }
+        }
+    }
+}
+.kl-newsletter-form {
+    max-width: 497px;
+    margin: 0 auto;
+}
+
+.kl-footer-middle {
+    border-top: 1px solid $gray_secondary;
+    padding: 27px 0 16px;
+    @include media-breakpoint-up(md) {
+        padding: 58px 0 16px;
+    }
+}
+.kl-title-useful-links {
+    font-size: 13px;
+    font-weight: $bold;
+    margin-bottom: 20px;
+}
+.kl-list-useful-links {
+    font-size: 13px;
+    list-style: none;
+    margin-bottom: 35px;
+    padding: 0;
+    li {
+        margin-bottom: 20px;
+        a {
+            color: $black;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.kl-drop-language {
+    display: inline-block;
+    .kl-btn-dropdown-language {
+        display: inline-flex;
+        align-items: center;
+        &::after {
+            display: none;
+        }
+    }
+    .dropdown-menu {
+        background-color: $blue_light;
+        border-radius: 18px;
+        border: none;
+        padding: 15px 0;
+        min-width: 100%;       
+    }
+    .dropdown-item {
+        color: $black;
+        font-size: 15px;
+        font-family: $font_secondary;
+        padding-left: 24px;
+    }
+}
+
+.kl-footer-bottom {
+    border-top: 1px solid $gray_secondary;
+    padding: 17px 0 13px;
+    @include media-breakpoint-up(md) {
+        padding: 45px 0;        
+    }
+}
+.kl-list-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    li {
+        margin: 8px 16px 8px 0;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            color: $black;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .kl-px-down-md-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .kl-list-legal-links {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,374 @@
+$width_img_nws:168px;
+
+.kl-card-model{
+	height: 100%;
+	position: relative;
+}
+.kl-card-model-img{
+	margin-bottom: 16px;
+	img{
+		border-radius: 10px;
+		width: 100%;
+	}
+}
+.kl-card-model-body{
+	h3{
+		margin-bottom: 16px;
+	}
+	p{
+		line-height: 23px;
+		margin-bottom: 0;
+	}
+}
+.kl-card-model-btn{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+	.kl-btn-read-more{
+		font-family: $font_tertiary;
+		color: $green_primary;
+		position: relative;
+		padding: 0;
+		&:after{
+			content: '';
+			position: absolute;
+			background: url('../images/icon-feather-arrow-right.svg') no-repeat center;
+			background-size: contain;
+			width: 14px;
+			height: 14px;
+			top: 3px;
+    		right: -20px;
+    		transition: all 0.3s;
+		}
+		&:hover{
+			&:after{
+				right: -26px;
+			}
+		}
+	}
+}
+.kl-height-296{
+	img{
+		height: 296px;
+		object-fit: cover;
+	}
+}
+.kl-height-287{
+	img{
+		height: 287px;
+		object-fit: cover;
+	}
+}
+
+.kl-card-hydro {
+	background: $black no-repeat center / cover;
+	border-radius: 10px;
+	color: $white;
+	overflow: hidden;
+	min-height: 296px;
+	padding: 69.5px 15px 20px;
+	text-align: center;
+	h3 {
+		font-family: $font_tertiary;
+	}
+}
+
+.kl-card-hydro-icon {
+	margin-bottom: 15.5px;
+}
+
+.kl-card-nws-resp{
+	color: $black;
+	transition: all ease 0.5s;
+	display: flex;
+	flex-direction: column;
+	&:hover{
+		color: $black;
+	}
+	.kl-card-header{
+		display: flex;
+		img{
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	@include media-breakpoint-down(md){
+		.kl-card-header{
+			.kl-img{
+				width: 82px;
+				height: 82px;
+				flex: 0 0 auto;
+				order: 2;
+				margin-left: 10px;
+			}
+			.kl-title{
+				order: 1;
+				h2{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(md){
+		.kl-card-header{
+			display: flex;
+			flex-direction: column;
+			img{
+				height: 196px;
+				object-fit: cover;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.kl-card-nws{
+	color: $black;
+	transition: all ease 0.5s;
+	display: flex;
+	flex-direction: column;
+	&.kl-small-card{
+		.kl-card-header{
+			img{
+				height: 196px;
+				object-fit: cover;
+				width: 100%;
+			}
+		}
+	}
+	&:hover{
+		color: $black;
+	}
+}
+
+.kl-card-link-df{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+.kl-card-prs{
+	display: flex;
+	flex-direction: column;
+	padding: 48px 52px 33px;
+	border-radius: 10px;
+	color: black;
+	transition: all ease 0.5s;
+	&:hover{
+		color: $black;
+	}
+	@include media-breakpoint-down(xs_375){
+		padding: 35px 35px 25px;
+	}
+	.kl-logo{
+		filter:grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		transition: all ease 0.5s;
+	}
+	.kl-card-header{
+		padding-bottom: 16px;
+	}
+	.kl-card-body{
+		padding-bottom: 16px;
+	}
+	&:hover{
+		.kl-logo{
+			filter:none;
+			-webkit-filter:none;
+		}
+	}
+}
+
+.kl-actus-nws-wrap{
+	.kl-actus-nws{
+		& + .kl-actus-nws{
+			margin-top: 64px;
+		}
+	}
+	@include media-breakpoint-up(lg){
+		.kl-actus-nws{
+			& + .kl-actus-nws{
+				margin-top: 84px;
+			}
+		}
+	}
+}
+
+.kl-actus-nws{
+	display: flex;
+	flex-direction: column;
+	color: $black;
+	&:hover{
+		color: $black;
+	}
+	.kl-actus-nws-header{
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: space-between;
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.kl-actus-title{
+			flex-grow: 1;
+		}
+		.kl-img{
+			width: 82px;
+			margin-left: 10px;
+			flex: 0 0 auto;
+			height: 82px;
+		}
+	}
+	.kl-actus-desc{
+		margin-bottom: 16px;
+	}
+	@include media-breakpoint-down(lg){
+		.kl-actus-title{
+			h2{
+				font-size: 20px;
+			}
+		}
+	}
+	@include media-breakpoint-up(lg){
+		.kl-actus-nws-header{
+			margin-bottom: 16px;
+			.kl-img{
+				width: $width_img_nws;
+				margin-left: 24px;
+				height: 94px;
+			}
+		}
+		.kl-actus-nws-body{
+			max-width: calc(100% - #{$width_img_nws});
+		}
+		.kl-actus-desc{
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.kl-card-nws-cust{
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	padding-top: 38px;
+	.kl-card-header{
+		padding: 0 50px;
+		position: relative;
+		.kl-bg{
+			position: absolute;
+			width: 100%;
+			height: calc(100%);
+			top: -38px;
+			left: 0;
+			z-index: -1;
+		}
+		img{
+			min-height: 160px;
+			object-fit: cover;
+		}
+	}
+	@include media-breakpoint-down(sm){
+		padding-top: 25px;
+		.kl-card-header{
+			.kl-bg{
+				top: -21px;
+				left: 50%;
+				width: 100vw;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	@include media-breakpoint-up(lg){
+		.kl-card-header, .kl-card-info{
+			padding: 0 92px;
+		}
+	}
+}
+
+.kl-card-tarifs {
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 16px 16px 32px;
+	.kl-card-tarifs-img {
+		margin-bottom: 20px;
+	}
+	.kl-card-tarifs-body {
+		padding: 20px 15px 12px 29px;
+	}
+	.kl-card-tarifs-footer {
+		margin-top: auto;
+		padding: 0 15px 0 36px;
+	}
+}
+
+.kl-card-tarifs-img {
+	border-radius: 10px;
+	height: 139px;
+	overflow: hidden;
+	position: relative;
+	background-image: radial-gradient(circle at 50% 100%, #209f97, #c5eef4 35%, #fff 57%);
+	background-color: $white;
+	img {
+		max-width: 100%;
+		height: auto;
+		position: absolute;
+		top: 22px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+}
+
+.kl-card-tarifs-big {
+	border-radius: 10px;
+	padding: 48px 39px 56px;
+	@include media-breakpoint-up(md) {
+		padding: 36px 15px 30px;
+	}
+	.kl-col-xl-img-card-tarifs-big {
+		@include media-breakpoint-up(xl) {
+			max-width: 400px;
+			img {
+				position: relative;
+				top: 10px;
+			}
+		}
+	}
+}
+
+.kl-card-tips {
+	background-color: $blue_light;
+	border-radius: 18px;
+	overflow: hidden;
+}
+.kl-card-tips-img {
+	height: 110px;
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+	}
+	.kl-card-tips-name {
+		background-color: $black;
+		border-radius: 100px;
+		color: $white;
+		font-size: 13px;
+		font-weight: $bold;
+		padding: 4px 16px 3.425px;
+		position: absolute;
+		left: 12px;
+		bottom: 10.5px;
+	}
+}
+.kl-card-tips-body {
+	color: $black;
+	padding: 11.7px 19px 9.5px;
+}

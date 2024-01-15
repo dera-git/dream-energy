@@ -1,0 +1,48 @@
+.kl-accordion-df{
+  .accordion-item{
+    border: 0;
+    border-radius: 6px;
+  }
+   .accordion-button{
+     padding: 14px 35px 14px 28px;
+     font-family: $font_tertiary;
+     font-size: 12px;
+     font-weight: $bold;
+     line-height: 1.25em;
+     border-radius: 6px;
+     color: $black;
+     box-shadow: none;
+     outline: none;
+     border: none;
+     justify-content: space-between;
+     &:after{
+       background-image:url(../images/icon-chevron-right.svg);
+       width: 8px;
+       background-size: contain;
+       position: relative;
+       display: inline-block;
+       background-position: center right;
+       margin-left: 15px;
+       flex: 0 0 auto;
+     }
+     &:not(.collapsed)::after{
+       transform: rotate(90deg);
+     }
+   }
+   .accordion-body{
+     padding: 25px 38px 45px;
+   }
+  @include media-breakpoint-down(xs_375){
+    .accordion-button{
+      padding: 14px 25px 14px 25px;
+    }
+    .accordion-body{
+      padding: 25px 30px 35px;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    .accordion-body{
+      padding: 30px 90px 60px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.kl-btn {
+    @include buttons;
+    &.kl-btn-xs {
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4.825px 13.325px;
+    }
+    &.kl-btn-sm {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 7px 17px;
+    }
+    &.kl-btn-lg {
+        border-radius: 24px;
+        font-size: 18px;
+        padding: 20.4px 39px 19px;
+    }
+}
+
+.kl-btn-rounded {
+    @include buttons_rounded;
+}
+
+.kl-btn-close {
+  padding: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    .kl-icon-outline-close {
+      path {
+        fill: $white;
+        stroke: $black;
+      }
+    }
+  }
+}
+
+//buttons variant
+@each $color, $value in $theme_colors {
+    .kl-btn-#{$color} {
+      @include buttons_variant($value, $white);
+    }
+}
+
+//buttons outline variant
+@each $color, $value in $theme_colors {
+    .kl-btn-outline-#{$color} {
+      @include buttons_outline_variant($value, $white);
+    }
+}

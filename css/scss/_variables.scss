@@ -1,0 +1,105 @@
+//font family
+$font_primary: 'Poppins', sans-serif;
+$font_secondary: 'Outfit', sans-serif;
+$font_tertiary: 'Object Sans', sans-serif;
+
+//font weight
+$black_weight: 900;
+$extra_bold: 800;
+$bold: 700;
+$semi_bold: 600;
+$medium: 500;
+$regular: 400;
+
+//color
+$black: #000000;
+$white: #ffffff;
+$gray_primary: #818181;
+$gray_secondary: #CCCCCC;
+$blue_primary: #03A9C5;
+$blue_secondary: #00b4cd;
+$blue_light: #F2F8F8;
+$blue_dark: #011D52;
+$green_primary: #00766F;
+$green_secondary: #A9F571;
+$green_tertiary: #52AE32;
+$green_quaternary: #95c11f;
+$green_light:#a9f571;
+$green_dark: #051A2E;
+$red_primary: #FF7469;
+
+//theme color class
+$theme_colors: (
+    "transparent": transparent,
+    "black": $black,
+    "white": $white,
+    "blue-primary": $blue_primary,
+    "blue-light": $blue_light,
+    "green-primary": $green_primary,
+    "green-secondary": $green_secondary,
+    "green-tertiary": $green_tertiary,
+    "gray-primary": $gray_primary,
+    "gray-secondary": $gray_secondary,
+    "green-light": $green_light,
+    "green-dark": $green_dark,
+    "red-primary": $red_primary,
+);
+
+//max value
+$border_radius_value: (
+  "10": 10px,
+  "18": 18px,
+);
+
+//max value
+$max_value: (
+  "none": none,
+  "125": 125px,
+  "240": 240px,
+  "352": 352px,
+  "444": 444px,
+  "448": 448px,
+  "454": 454px,
+  "536": 536px,
+  "552": 552px, 
+  "609": 609px,
+  "630": 630px,
+  "720": 720px,
+  "812": 812px,
+  "904": 904px,
+  "930": 930px,
+);
+
+//line-height value
+$line_height_value: (
+  "1_2": 1.2,
+  "1_3": 1.3,
+  "1_5": 1.5,
+  "1_6": 1.6,
+  "45": 45px
+);
+
+//z-index value
+$z_index_value: (
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+);
+
+//grid
+$grid-breakpoints: (
+  xs: 0,
+  xs_375: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$url_fonts : '../fonts';
+
+$spaceamounts_side: (5, 10, 15, 20, 24, 25, 30, 35, 40, 45, 50, 56,60, 64, 70, 75,80,95, 100,115, 150);
+$sides: (top, bottom, left, right);

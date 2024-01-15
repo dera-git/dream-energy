@@ -1,0 +1,37 @@
+.kl-hero-404{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 132px 0 95px;
+  min-height: calc(100vh - 275px);
+}
+
+.kl-mt-n-10{
+  margin-top: -10px;
+}
+
+@include media-breakpoint-up(lg){
+  .kl-mt-n-lg-20{
+    margin-top: -20px !important;
+  }
+}
+
+.kl-p-main-404{
+  padding-top: 85px;
+}
+
+.kl-text-not-found{
+  font-size: 337px;
+  line-height: 0.9;
+  font-weight: $semi_bold;
+  font-family: $font_secondary;
+  @include media-breakpoint-down(lg){
+    font-size: 192px;
+  }
+  @media (max-width: 389.98px) {
+    font-size: 150px;
+  }
+  @media (max-width: 319.98px) {
+    font-size: 100px;
+  }
+}

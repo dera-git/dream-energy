@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Energy</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">   
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <header class="kl-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <a class="navbar-brand py-0" href="#">
+                        <img class="kl-logo-when-light img-fluid" src="./images/logo.svg" alt="Logo Dream Energy">
+                        <img class="kl-logo-when-dark img-fluid" src="./images/logo-white.svg" alt="Logo Dream Energy">
+                    </a>
+                    <div class="kl-wrapper-navbar-toggler d-lg-none">
+                        <button class="navbar-toggler kl-btn kl-btn-black js-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id-navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="kl-menu-burger">
+                                <i class="kl-menu-burger-line"></i>
+                                <i class="kl-menu-burger-line"></i>
+                                <i class="kl-menu-burger-line"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="id-navbar-supported-content">
+                        <ul class="navbar-nav align-items-lg-center ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown js-dropdwon-hover" data-width="206">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                    Qui sommes-nous ?
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Opérateur de stations de superchargeurs</a></li>
+                                    <li><a class="dropdown-item" href="#">Producteur d'énergie renouvelable</a></li>
+                                    <li><a class="dropdown-item" href="#">Fournisseur d'énergie renouvelable</a></li>
+                                    <li><a class="dropdown-item" href="#">Bureau d’étude et R&D</a></li>
+                                    <li><a class="dropdown-item" href="#">Notre équipe</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Notre modèle</a>
+                            </li>
+                            <li class="nav-item dropdown js-dropdwon-hover" data-width="274">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                    Nos stations
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Trouver une station</a></li>
+                                    <li><a class="dropdown-item" href="#">Nos gammes de stations</a></li>
+                                    <li><a class="dropdown-item" href="#">Notre borne superchargeur</a></li>
+                                    <li><a class="dropdown-item" href="#">Héberger une station</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tarifs</a>
+                            </li>
+                            <li class="nav-item dropdown js-dropdwon-hover">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                    Actualités
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Presse</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Investisseurs</a>
+                            </li>
+                            <li class="nav-item ms-2 ms-xl-4 d-none d-lg-block">
+                                <a href="#" class="kl-btn kl-btn-black">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-lg-none ps-2 mt-auto w-100">
+                            <a href="#" class="kl-btn kl-btn-white mx-2 mb-3">Contact</a>
+                            <a href="#" class="kl-btn kl-btn-white mx-2 mb-3">Proposer un site</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="kl-scroll-container kl-modele-page-primary" data-scroll-container>
+            <section class="kl-section-hero mb-2">
+                <div class="container kl-container-xl-1120 kl-gx-16 flex-grow-1 d-flex flex-column">
+                    <div class="kl-hero-video">
+                        <video id="id-hero-video" class="kl-hero-bg-video" autoplay loop muted src="./videos/SampleVideo_1280x720_1mb.mp4"></video>
+                        <div class="kl-hero-video-overlay"></div>
+                        <div class="kl-hero-video-content kl-color-white">
+                            <div class="kl-title-hero kl-max-w-812">
+                                <h1>Le réseau de <strong>superchargeurs</strong> alimenté par sa propre énergie <span>renouvelable et locale</span></h1>
+                            </div>
+                            <div class="kl-fs-17 kl-max-w-609 mt-md-4 pt-2">
+                                Dream Energy est producteur, fournisseur d'énergie verte et exploitant de stations de recharge pour véhicules électriques.
+                            </div>
+                            <div class="mb-md-2 pb-md-4 mt-3 pt-1 kl-fs-0">
+                                <span class="d-block d-md-inline-block pb-1 mb-2 me-md-4 pe-md-1">
+                                    <a href="#" class="kl-btn kl-btn-white kl-btn-lg">Héberger une station</a>
+                                </span>
+                                <span class="d-block d-md-inline-block pb-1 mb-md-2">
+                                    <a href="#" class="kl-btn kl-btn-outline-white kl-btn-lg kl-font-tertiary d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#id-modal-video">
+                                        <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="13.944" height="17.5" viewBox="0 0 13.944 17.5">
+                                            <path id="Icon_feather-play" data-name="Icon feather-play" d="M7.5,4.5l12.444,8L7.5,20.5Z" transform="translate(-6.75 -3.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                        </svg>
+                                        Voir la vidéo
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kl-scroll-down-text kl-fs-12">Découvrir</div>
+                </div>
+
+                <!-- video in modal -->
+                <div class="modal fade kl-modal-video" id="id-modal-video" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modal-video" aria-hidden="true" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered kl-max-w-none mx-0">
+                        <div class="container kl-container-xl-1120 kl-gx-16">
+                            <div class="modal-content kl-bg-transparent border-0">
+                                <div class="position-relative text-end pb-1 pb-md-0">
+                                    <button type="button" class="btn kl-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <svg class="kl-icon-outline-close" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                                            <g id="Icon_feather-x-circle" data-name="Icon feather-x-circle" transform="translate(-2.5 -2.5)">
+                                            <path id="Tracé_14478" data-name="Tracé 14478" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            <path id="Tracé_14479" data-name="Tracé 14479" d="M22.5,13.5l-9,9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            <path id="Tracé_14480" data-name="Tracé 14480" d="M13.5,13.5l9,9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            </g>
+                                        </svg>                                  
+                                    </button>
+                                </div>
+                                <video id="id-video-in-modal" controls src="./videos/SampleVideo_1280x720_1mb.mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-heberger-station">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="row kl-gx-16 align-items-md-center">
+                        <div class="col-md-6 order-md-1" data-aos="fade-left" data-aos-duration="800">
+                            <ul class="kl-fs-12 list-unstyled d-flex flex-wrap mb-2 mb-md-3">
+                                <li class="me-1">Commerces /</li>
+                                <li class="me-1">Hôtels /</li>
+                                <li class="me-1">Collectivités /</li>
+                                <li class="me-1">Parcs tertiaires /</li>
+                                <li class="me-1">Propriétaires fonciers</li>                                
+                            </ul>
+                            <div class="kl-title-section mb-4 pb-3">
+                                <h2>
+                                    Vous souhaitez héberger une station de <span class="kl-underline-gradient-animate">superchargeurs?<span class="kl-gradient-animation" data-aos="fade-right" data-aos-duration="800"></span></span>
+                                </h2>
+                            </div>
+                            <ul class="kl-list-feather-check-circle kl-lh-1_2 pb-md-2">
+                                <li>Investissement réalisé à <strong>100% par Dream Energy</strong></li>
+                                <li><strong>Bénéficiez d’un revenu</strong>locatif ou foncier</li>
+                                <li>Offrez à vos clients une <strong>recharge ultra rapide en 20 minutes env.</strong></li>
+                                <li>Ayez un<strong>véritable impact environnemental</strong></li>
+                            </ul>
+                            <a href="#" class="kl-btn kl-btn-black">Héberger une station</a>
+                        </div>
+                        <div class="col-md-6 order-md-0 text-center text-md-start pt-4 mt-5 pt-md-0 mt-md-0" data-aos="fade-right" data-aos-duration="800">
+                            <div class="kl-img-with-decor">
+                                <img src="./images/homepage/section-heberger-station.png" alt="image" class="img-fluid">
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-reseau-stations kl-bg-blue-light">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-title-section text-center pb-md-2 mb-5" data-aos="fade-up">
+                        <h2>Un réseau de stations de superchargeurs<br> 
+                            et de <span class="kl-underline-gradient-animate"><span class="position-relative kl-z-index-1">production d'électricité renouvelable</span><span class="kl-gradient-animation kl-z-index-0" data-aos="fade-right" data-aos-duration="800"></span></span>
+                        </h2>
+                    </div>
+                    <div class="kl-max-w-904 mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="row kl-gx-16">
+                            <div class="col-lg">
+                                <div class="kl-scrollable-wrapper-map">
+                                    <div class="kl-wrapper-map kl-border-radius-10 overflow-hidden">
+                                        <div class="kl-wrapper-btn-switch">
+                                            <div class="kl-btn-switch">
+                                                <div class="form-check active">
+                                                    <input class="form-check-input visually-hidden" type="radio" name="choice_stations" id="id-stations-0" value="stations" checked>
+                                                    <label class="form-check-label" for="id-stations-0">
+                                                        <span>Stations</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input visually-hidden" type="radio" name="choice_stations" id="id-stations-1" value="energy">
+                                                    <label class="form-check-label" for="id-stations-1">
+                                                        <span>Sources d'énergie</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="id-map" class="kl-map"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto kl-flex-basis-lg-276 mt-3 mt-lg-0">
+                                <div class="kl-reseau-stations-app kl-bg-green-primary kl-border-radius-10 kl-color-white h-100">
+                                    <div class="px-lg-2">
+                                        <h3 class="kl-font-tertiary mb-1 pe-2 pe-lg-0">Téléchargez l’application mobile</h3>
+                                        <div>Sed posuere consectetur est at lobortis.</div>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <a href="#" class="kl-btn kl-btn-xs kl-btn-black me-1">
+                                            <img src="./images/App-Store-Badge-xs.svg" alt="App Store Badge">
+                                        </a>
+                                        <a href="#" class="kl-btn kl-btn-xs kl-btn-black ">
+                                            <img src="./images/Play-Store-Badge-xs.svg" alt="Play Store Badge">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-bg-img">
+                <div class="kl-image-bg" style="background-image: url(./images/homepage/station3.jpg);"></div>
+            </section>
+
+            <section class="kl-section-howitwork">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-title-section text-center mb-5 mb-md-3" data-aos="fade-up">
+                        <h2>Comment ça marche ?</h2>
+                    </div>
+                    <div class="row kl-gx-16">
+                        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-right" data-aos-duration="800">
+                            <div class="kl-howitwork-img">
+                                <img src="./images/homepage/howitwork-img-1.png" alt="image">
+                            </div>
+                            <h3>Localiser une station</h3>
+                            <p>Retrouvez toutes nos stations disponibles grâce à l'App Dream Energy ou toute autre App de localisation.</p>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-up" data-aos-duration="800">
+                            <div class="kl-howitwork-img">
+                                <img src="./images/homepage/howitwork-img-2.png" alt="image">
+                            </div>
+                            <h3>Recharger son véhicule</h3>
+                            <p>Stationnez sur une place disponible et branchez le connecteur adapté à votre véhicule ( CCS / CHAdeMO / type 2 disponibles en station).</p>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0" data-aos="fade-left" data-aos-duration="800">
+                            <div class="kl-howitwork-img">
+                                <img src="./images/homepage/howitwork-img-3.png" alt="image">
+                            </div>
+                            <h3>Payer par carte bancaire/abonnement</h3>
+                            <p>Utilisez votre carte bancaire, votre badge RFID ou l'App Dream Energy pour régler votre recharge.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-hydro">
+                <div class="container kl-container-xl-1120 kl-gx-16 text-center">
+                    <div class="kl-fs-12 mb-2" data-aos="fade-up">
+                        Producteur / Fournisseur / Superchargeur
+                    </div>
+                    <div class="kl-title-section pb-3 mb-4" data-aos="fade-up">
+                        <h2>Un modèle vertueux <span class="kl-underline-gradient-animate">unique en France<span class="kl-gradient-animation" data-aos="fade-right" data-aos-duration="800"></span></span></h2>
+                    </div>
+                    <div class="row kl-gx-16 kl-gy-16">
+                        <div class="col-md-4">
+                            <div data-aos="fade-right" data-aos-duration="800" class="kl-card-hydro h-100" style="background-image: url(./images/homepage/HYDRO\ -\ Tancua\ -\ Barrage-1.png);">
+                                <img class="kl-card-hydro-icon" src="./images/homepage/Icon open-bolt.svg" alt="icon">
+                                <h3>Production d'éléctricité photovoltaique et hydraulique</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div data-aos="fade-up" data-aos-duration="800" class="kl-card-hydro h-100" style="background-image: url(./images/homepage/HYDRO\ -\ Tancua\ -\ Barrage-2.png);">
+                                <img class="kl-card-hydro-icon" src="./images/homepage/Icon map-electrician.svg" alt="icon">
+                                <h3>Stockage et fourniture d'électricité grâce à nos Smartgrid brevetés</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div data-aos="fade-left" data-aos-duration="800" class="kl-card-hydro h-100" style="background-image: url(./images/homepage/HYDRO\ -\ Tancua\ -\ Barrage-3.png);">
+                                <img class="kl-card-hydro-icon" src="./images/homepage/Icon metro-battery-full.svg" alt="icon">
+                                <h3>Recharge ultra rapide pour véhicules electriques</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-2 pt-md-0 mt-4">
+                        <a href="#" class="kl-btn kl-btn-black">En savoir plus</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-superchargeurs">
+                <div class="container kl-container-xl-1120 kl-gx-16 text-center">
+                    <div class="kl-title-section pb-3 mb-4" data-aos="fade-up">
+                        <h2>Superchargeurs pour recharge <span class="kl-underline-gradient-animate">ultra rapide<span class="kl-gradient-animation" data-aos="fade-right" data-aos-duration="800"></span></span></h2>
+                    </div>
+                    <div class="kl-max-w-448 mx-auto d-flex align-items-center justify-content-between pb-2 mb-4 px-4 px-md-0" data-aos="fade-up">
+                        <span>
+                            <img src="./images/homepage/logo-dream-energy.svg" alt="Logo Dream energy" class="img-fluid">
+                        </span>                          
+                        <svg class="kl-icon-multiply mx-4 mx-md-2" xmlns="http://www.w3.org/2000/svg" width="14.78" height="14.78" viewBox="0 0 14.78 14.78">
+                            <g id="Groupe_1725" data-name="Groupe 1725" transform="translate(-588.793 -3852.863)">
+                              <line id="Ligne_36" data-name="Ligne 36" y1="13.366" x2="13.366" transform="translate(589.5 3853.57)" fill="none" stroke="#000" stroke-width="2"/>
+                              <line id="Ligne_37" data-name="Ligne 37" x1="13.366" y1="13.366" transform="translate(589.5 3853.57)" fill="none" stroke="#000" stroke-width="2"/>
+                            </g>
+                        </svg>
+                        <span>             
+                            <img src="./images/homepage/logo-siemens.svg" alt="Logo Siemens" class="img-fluid">
+                        </span>
+                    </div>
+                    <div class="kl-max-w-720 mx-auto mb-4 mb-md-5"  data-aos="fade-up">
+                        <p>Dream energy a signé en 2022 <strong>un partenariat inédit avec Siemens</strong> Smart Infrastructure pour  le déploiement de bornes de supercharge <strong>performantes, fiables et simple d'utilisation.</strong></p>
+                    </div>
+
+                    <div class="row kl-gx-16 kl-gy-16">
+                        <div class="col-lg-4">
+                            <div class="row kl-gx-16 kl-gy-16">
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-green-light">
+                                        <img src="./images/homepage/Icon awesome-charging-station.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <h2 class="mb-0 kl-lh-1_2">2</h2>
+                                        <div>Points <br>de recharge</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-blue-light">
+                                        <img src="./images/homepage/Icon material-touch-app.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <span class="kl-radial-text-1"><span class="js-counter">24</span></span>
+                                        <div>Ecran tactile</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="kl-superchargeurs-box kl-bg-green-primary" data-aos="flip-left" data-aos-duration="800">
+                                        <img src="./images/homepage/Icon material-call-split.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <h3 class="kl-color-white mb-0">Répartition intelligente</h3>
+                                        <div class="kl-color-white">de la charge entre 2 véhicules</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-blue-light">
+                                        <div class="mt-auto">Fabriqué en <strong>Europe</strong></div>
+                                        <img src="./images/homepage/Flag-Europe-waving-on-transparent-background-PNG.png" alt="drapeau EU" class="fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-green-dark">
+                                        <img src="./images/homepage/Icon onde.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <div class="kl-color-white mt-auto">Terminal de paiement par <br><strong>CB et cartes RFID</strong></div>
+                                        <img src="./images/homepage/img-carte-bancaire.png" alt="carte bancaire" class="img-fluid kl-mb--35">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="kl-superchargeurs-box kl-superchargeurs-box-gradient h-100">
+                                <img src="./images/homepage/Bornes_Sischarge2.png" alt="image" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row kl-gx-16 kl-gy-16">
+                                <div class="col-12">
+                                    <div class="kl-superchargeurs-box kl-bg-blue-light" data-aos="flip-left" data-aos-duration="800">
+                                        <img src="./images/homepage/Icon material-timer.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <span class="kl-radial-text-2"><span class="js-counter">20</span> minutes</span>
+                                        <div class="mt-2">Pour une recharge complète</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-green-primary">
+                                        <img src="./images/homepage/Icon map-electrician-green.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <h3 class="mb-0 kl-color-white">160 à 300 kW</h3>
+                                        <div class="kl-color-white">Puissance</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="kl-superchargeurs-box kl-bg-black">
+                                        <img src="./images/homepage/Icon awesome-assistive-listening-systems.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <div class="kl-color-white">Système de contrôle acoustique</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="kl-superchargeurs-box kl-bg-green-light" data-aos="flip-left" data-aos-duration="800">
+                                        <img src="./images/homepage/Icon ionic-ios-battery-charging.svg" alt="icon bg" class="kl-superchargeurs-box-icon-bg">
+                                        <h3>Recharge en courant <br>continue DC</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-md-center text-start text-md-center pt-2 mt-4">
+                        <h3 class="mb-3 mb-md-0 me-4">Nos bornes sont compatibles avec tous les types de véhicule : </h3>
+                        <div class="d-flex flex-wrap align-items-center">
+                            <span class="me-3">
+                                <img class="me-4" src="./images/homepage/CCS-2-Chademo.svg" alt="icon">
+                                CCS 2 & Chademo
+                            </span>
+                            <span>
+                                <img class="me-2" src="./images/homepage/type-2.svg" alt="icon">
+                                Type 2
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-presse">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-title-section text-center mb-4 mb-md-3 pb-1" data-aos="fade-up">
+                        <h2>Dream Energy dans la presse</h2>
+                    </div>
+                    <div class="row kl-gx-16 kl-gy-16">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="800">
+                            <a href="#" class="kl-card-prs kl-bg-blue-light h-100">
+                                <div class="kl-card-header">
+                                    <img src="images/actualite/logo-echo.svg" class="img-fluid kl-logo" alt="">
+                                </div>
+                                <div class="kl-card-body">
+                                    <h3>Cum sociis natoque penatibus et magnis dis parturient montes.</h3>
+                                </div>
+                                <div class="mt-auto text-end">
+                                    <button type="button" class="kl-btn-read-more">Lire la suite <span class="kl-icon"><img src="images/actualite/icon-flush-top-right.svg" alt=""></span></button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800">
+                            <a href="#" class="kl-card-prs kl-bg-blue-light h-100">
+                                <div class="kl-card-header">
+                                    <img src="images/actualite/Boursorama_logo.svg" class="img-fluid kl-logo" alt="">
+                                </div>
+                                <div class="kl-card-body">
+                                    <h3>Nulla vitae elit libero, a pharetra augue. Justo Ridiculus Elit.</h3>
+                                </div>
+                                <div class="mt-auto text-end">
+                                    <button type="button" class="kl-btn-read-more">Lire la suite <span class="kl-icon"><img src="images/actualite/icon-flush-top-right.svg" alt=""></span></button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="800">
+                            <a href="#" class="kl-card-prs kl-bg-blue-light h-100">
+                                <div class="kl-card-header">
+                                    <img src="images/actualite/logo-Challenge.svg" class="img-fluid kl-logo" alt="">
+                                </div>
+                                <div class="kl-card-body">
+                                    <h3>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h3>
+                                </div>
+                                <div class="mt-auto text-end">
+                                    <button type="button" class="kl-btn-read-more">Lire la suite <span class="kl-icon"><img src="images/actualite/icon-flush-top-right.svg" alt=""></span></button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2 mt-md-4 pt-1">
+                        <a href="#" class="kl-btn kl-btn-black">Voir plus</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-partner">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-title-section text-center mb-3 mb-md-4" data-aos="fade-up">
+                        <h2>Ils utilisent les superchargeurs Dream Energy</h2>
+                    </div>
+                    <div class="row kl-gx-16 kl-gy-16">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner kl-logo-opaque">
+                                        <img src="./images/homepage/partner/carrefour.png" alt="carrefour" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner kl-logo-opaque">
+                                        <img src="./images/homepage/partner/accor_hotels.png" alt="accod hotels" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/bosch.png" alt="bosch" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/IBM_logo.png" alt="ibm" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/axa.png" alt="axa" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/Crédit_Agricole_2020_logo.png" alt="ca" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner kl-logo-opaque">
+                                        <img src="./images/homepage/partner/decathlon.png" alt="decathlon" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner kl-logo-opaque">
+                                        <img src="./images/homepage/partner/ikea.png" alt="ikea" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/orange.png" alt="orange" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/Vinci_logo.png" alt="vinci" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/mc-do.png" alt="mc do" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="kl-logo-partner">
+                                        <img src="./images/homepage/partner/Oracle_logo.png" alt="oracle" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kl-section-app">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-app-content kl-bg-blue-light">
+                        <div class="kl-max-w-812 mx-auto">
+                            <div class="row align-items-md-center">
+                                <div class="col-lg-6 pb-lg-5 mb-lg-3">
+                                    <div class="kl-min-h-lg-168 d-lg-flex flex-lg-column justify-content-lg-center">
+                                        <div class="kl-title-section mb-1">
+                                            <h2>Téléchargez l’application<br> Dream energy</h2>
+                                        </div>
+                                        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                        <div class="pt-1 pt-lg-0">
+                                            <a href="#" class="kl-btn kl-btn-sm kl-btn-black mb-2 mb-md-0 me-1 me-md-3">
+                                                <img src="./images/App-Store-Badge.svg" alt="App Store Badge">
+                                            </a>
+                                            <a href="#" class="kl-btn kl-btn-sm kl-btn-black mb-2 mb-md-0">
+                                                <img src="./images/Play-Store-Badge.svg" alt="Play Store Badge">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 align-self-lg-end position-relative text-center">
+                                    <img src="./images/homepage/img-section-app.png" alt="image" class="kl-app-content-img img-fluid" data-aos="fade-up-left" data-aos-duration="800">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="kl-footer">
+                <div class="container kl-container-xl-1120 kl-gx-16">
+                    <div class="kl-footer-top">
+                        <div class="kl-title-section text-center" data-aos="fade-up">
+                            <h2>
+                                Notre énergie va vous transporter !
+                                <span class="kl-gradient-animation" data-aos="fade-right" data-aos-duration="800"></span>
+                            </h2>
+                        </div>
+                        <form action="" class="kl-newsletter-form">
+                            <div class="text-center mb-3">
+                                <label for="id-newsletter-email"><b>Abonnez-vous à la newsletter</b></label>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <input id="id-newsletter-email" type="email" class="form-control kl-form-control" placeholder="Votre adresse email…" aria-label="Votre adresse email…">
+                                </div>
+                                <div class="col-auto ps-0 ps-md-2">
+                                    <button type="submit" class="kl-btn kl-btn-black">Je m’abonne</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="kl-footer-middle">
+                        <div class="row mb-5 mb-md-0">
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Qui sommes-nous ?</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Opérateur de stations de superchargeurs</a></li>
+                                    <li><a href="#">Producteur d’énergie renouvelable</a></li>
+                                    <li><a href="#">Fournisseur d’énergie renouvelable</a></li>
+                                    <li><a href="#">Bureau d’étude et R&D</a></li>
+                                    <li><a href="#">Notre équipe</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Notre modèle</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Unique en France</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Nos stations</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Trouver une station</a></li>
+                                    <li><a href="#">Nos gammes de stations</a></li>
+                                    <li><a href="#">Notre borne superchargeur</a></li>
+                                    <li><a href="#">Héberger une station</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Tarifs</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Comparer nos offres</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Actualités</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Presse</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-2">
+                                <h6 class="kl-title-useful-links">Divers</h6>
+                                <ul class="kl-list-useful-links">
+                                    <li><a href="#">Investisseurs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Recrutement</a></li>
+                                    <li><a href="#">Support / FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row pt-5 pt-md-3">
+                            <div class="col-12 col-md-auto text-center text-md-start kl-fs-0 kl-px-down-md-0">
+                                <a href="#" class="kl-btn kl-btn-sm kl-btn-black mx-2 mb-3 mb-md-0 mx-md-0 me-md-3">
+                                    <img src="./images/App-Store-Badge.svg" alt="App Store Badge">
+                                </a>
+                                <a href="#" class="kl-btn kl-btn-sm kl-btn-black mx-2 mb-3 mb-md-0 mx-md-0">
+                                    <img src="./images/Play-Store-Badge.svg" alt="Play Store Badge">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-auto ms-md-auto pt-3 pt-md-0 text-center text-md-end">
+                                <div class="kl-drop-language dropup">
+                                    <button class="kl-btn-dropdown-language kl-btn kl-btn-sm kl-btn-black dropdown-toggle kl-font-tertiary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                                            <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(-2.5 -2.5)">
+                                            <path id="Tracé_14424" data-name="Tracé 14424" d="M15,9A6,6,0,1,1,9,3a6,6,0,0,1,6,6Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            <path id="Tracé_14425" data-name="Tracé 14425" d="M3,18H15" transform="translate(0 -9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            <path id="Tracé_14426" data-name="Tracé 14426" d="M14.4,3a9.18,9.18,0,0,1,2.4,6,9.18,9.18,0,0,1-2.4,6A9.18,9.18,0,0,1,12,9a9.18,9.18,0,0,1,2.4-6Z" transform="translate(-5.4 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                            </g>
+                                        </svg>
+                                        <span class="fw-normal">Français (France)</span>                                      
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Français (France)</a></li>
+                                        <li><a class="dropdown-item" href="#">English (England)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kl-footer-bottom" data-aos="fade-up" data-aos-duration="500">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-md order-md-1 text-center text-md-end">
+                                <strong class="d-inline-block mb-2 mb-md-0">Suivez-nous :</strong>
+                                <ul class="list-unstyled d-flex d-md-inline-flex justify-content-center mb-md-0 px-0 ps-md-1 pe-md-3">
+                                    <li class="ms-1">
+                                        <a href="#" class="kl-btn-rounded kl-btn-black">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13.271" height="24.778" viewBox="0 0 13.271 24.778">
+                                                <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M14.011,13.938,14.7,9.453H10.4V6.543a2.242,2.242,0,0,1,2.528-2.423H14.88V.3A23.854,23.854,0,0,0,11.408,0c-3.543,0-5.86,2.148-5.86,6.036V9.453H1.609v4.484H5.548v10.84H10.4V13.938Z" transform="translate(-1.609)" fill="#fff"/>
+                                            </svg>                                          
+                                        </a>
+                                    </li>
+                                    <li class="ms-1">
+                                        <a href="#" class="kl-btn-rounded kl-btn-black">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21.681" height="21.68" viewBox="0 0 21.681 21.68">
+                                                <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M4.853,21.681H.358V7.206H4.853ZM2.6,5.232A2.616,2.616,0,1,1,5.206,2.6,2.625,2.625,0,0,1,2.6,5.232ZM21.676,21.681H17.191V14.635c0-1.679-.034-3.833-2.337-3.833-2.337,0-2.7,1.824-2.7,3.712v7.167H7.669V7.206H11.98V9.181h.063A4.723,4.723,0,0,1,16.3,6.843c4.549,0,5.385,3,5.385,6.887v7.951Z" transform="translate(0 -0.001)" fill="#fff"/>
+                                            </svg>                                                                      
+                                        </a>
+                                    </li>
+                                    <li class="ms-1">
+                                        <a href="#" class="kl-btn-rounded kl-btn-black">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.996" viewBox="0 0 20 19.996">
+                                                <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M10,7.109a5.127,5.127,0,1,0,5.127,5.127A5.118,5.118,0,0,0,10,7.109Zm0,8.46a3.333,3.333,0,1,1,3.333-3.333A3.339,3.339,0,0,1,10,15.568ZM16.529,6.9a1.2,1.2,0,1,1-1.2-1.2A1.193,1.193,0,0,1,16.529,6.9Zm3.4,1.214a5.918,5.918,0,0,0-1.615-4.19,5.956,5.956,0,0,0-4.19-1.615c-1.651-.094-6.6-.094-8.25,0A5.948,5.948,0,0,0,1.68,3.919,5.937,5.937,0,0,0,.065,8.108c-.094,1.651-.094,6.6,0,8.25a5.917,5.917,0,0,0,1.615,4.19,5.964,5.964,0,0,0,4.19,1.615c1.651.094,6.6.094,8.25,0a5.918,5.918,0,0,0,4.19-1.615,5.956,5.956,0,0,0,1.615-4.19c.094-1.651.094-6.595,0-8.245ZM17.792,18.129a3.374,3.374,0,0,1-1.9,1.9c-1.316.522-4.439.4-5.894.4s-4.582.116-5.894-.4a3.374,3.374,0,0,1-1.9-1.9c-.522-1.316-.4-4.439-.4-5.894s-.116-4.582.4-5.894a3.374,3.374,0,0,1,1.9-1.9c1.316-.522,4.439-.4,5.894-.4s4.582-.116,5.894.4a3.374,3.374,0,0,1,1.9,1.9c.522,1.316.4,4.439.4,5.894S18.314,16.818,17.792,18.129Z" transform="translate(0.005 -2.238)" fill="#fff"/>
+                                            </svg>                                          
+                                        </a>
+                                    </li>
+                                    <li class="ms-1">
+                                        <a href="#" class="kl-btn-rounded kl-btn-black">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13.846" viewBox="0 0 20 13.846">
+                                                <g id="Icon_ionic-ios-mail" data-name="Icon ionic-ios-mail" transform="translate(-3.375 -7.875)">
+                                                <path id="Tracé_13741" data-name="Tracé 13741" d="M23.212,10.343l-5.173,5.269a.093.093,0,0,0,0,.135l3.62,3.856a.624.624,0,0,1,0,.885.627.627,0,0,1-.885,0l-3.606-3.841a.1.1,0,0,0-.139,0l-.88.894a3.871,3.871,0,0,1-2.76,1.163,3.949,3.949,0,0,1-2.817-1.2l-.846-.861a.1.1,0,0,0-.139,0L5.981,20.488a.627.627,0,0,1-.885,0,.624.624,0,0,1,0-.885l3.62-3.856a.1.1,0,0,0,0-.135L3.538,10.343a.1.1,0,0,0-.163.067V20.954a1.543,1.543,0,0,0,1.538,1.538H21.837a1.543,1.543,0,0,0,1.538-1.538V10.411A.1.1,0,0,0,23.212,10.343Z" transform="translate(0 -0.771)" fill="#fff"/>
+                                                <path id="Tracé_13742" data-name="Tracé 13742" d="M13.644,16.678a2.614,2.614,0,0,0,1.88-.788l7.543-7.678a1.511,1.511,0,0,0-.952-.337H5.178a1.5,1.5,0,0,0-.952.337l7.543,7.678A2.614,2.614,0,0,0,13.644,16.678Z" transform="translate(-0.269)" fill="#fff"/>
+                                                </g>
+                                            </svg>                                          
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md order-md-0">
+                                <ul class="kl-list-legal-links justify-content-center justify-content-lg-start">
+                                    <li>
+                                        <a href="#">Mentions légales</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">RGPD</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">© Dream Energy 2022</a>
+                                    </li>                                      
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kl-gradient-animation"></div>
+            </footer>
+        </div>
+
+        <!-- toast infos  -->
+        <div class="kl-toast-infos">
+            <button class="btn p-0 kl-toast-infos-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.414" height="10.414" viewBox="0 0 10.414 10.414">
+                    <g id="Groupe_1746" data-name="Groupe 1746" transform="translate(0.707 0.707)">
+                    <path id="Tracé_14427" data-name="Tracé 14427" d="M10.5,19.5l9-9" transform="translate(-10.5 -10.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    <path id="Tracé_14428" data-name="Tracé 14428" d="M19.5,19.5l-9-9" transform="translate(-10.5 -10.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    </g>
+                </svg>
+            </button>
+            <div class="d-flex flex-sm-column align-items-center text-sm-center">
+                <div class="me-2 me-sm-0 mb-0 mb-sm-2">
+                    <strong>Hébergez une station de superchargeur.</strong>
+                </div>
+                <a href="#" class="kl-btn kl-btn-white flex-shrink-0 ms-auto ms-sm-0">Proposer un site</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvHFOrTO-vEypyk3Q5RZYSExEgqTdTHEI&callback=initMap&v=weekly" defer></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>

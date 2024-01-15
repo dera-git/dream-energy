@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Object Sans';
+  src: url('#{$url_fonts}/object_sans/ObjectSans-Heavy.woff2') format('woff2'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Heavy.woff') format('woff'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Object Sans';
+  src: url('#{$url_fonts}/object_sans/ObjectSans-HeavySlanted.woff2') format('woff2'),
+  url('#{$url_fonts}/object_sans/ObjectSans-HeavySlanted.woff') format('woff'),
+  url('#{$url_fonts}/object_sans/ObjectSans-HeavySlanted.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Object Sans Slanted';
+  src: url('#{$url_fonts}/object_sans/ObjectSans-Slanted.woff2') format('woff2'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Slanted.woff') format('woff'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Slanted.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Object Sans';
+  src: url('#{$url_fonts}/object_sans/ObjectSans-Bold.woff2') format('woff2'),
+      url('#{$url_fonts}/object_sans/ObjectSans-Bold.woff') format('woff'),
+      url('#{$url_fonts}/object_sans/ObjectSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Object Sans';
+  src: url('#{$url_fonts}/object_sans/ObjectSans-Regular.woff2') format('woff2'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Regular.woff') format('woff'),
+  url('#{$url_fonts}/object_sans/ObjectSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

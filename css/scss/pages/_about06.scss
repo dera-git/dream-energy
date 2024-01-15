@@ -1,0 +1,240 @@
+.kl-with-bg{
+	overflow: hidden;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		background: url('../images/bg-header.png') no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 1088px;
+		height: 294px;
+		top: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    z-index: -1;
+	    @include media-breakpoint-down(xl) {
+	        width: 100%;
+    		height: 245px;
+	    }
+	    @include media-breakpoint-down(lg) {
+    		height: 204px;
+	    }
+	    @include media-breakpoint-down(md) {
+    		height: 145px;
+	    }
+	    @include media-breakpoint-down(sm) {
+	        width: 665px;
+    		height: 176px;
+	    }
+	}
+}
+.kl-mob-no-bg{
+	&:before{
+		@include media-breakpoint-down(sm) {
+	        background: none !important;
+	    }
+	}
+}
+.kl-px-92{
+	padding-left: 92px;
+	padding-right: 92px;
+	@include media-breakpoint-down(lg) {
+        padding-left: 25px;
+		padding-right: 25px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-left: 0;
+		padding-right: 0;
+    }
+}
+.kl-mb-38{
+	margin-bottom: 38px;
+}
+.kl-pt-about{
+	padding-top: 157px;
+}
+.kl-section-about-intro{
+	margin-bottom: 82px;
+	@include media-breakpoint-down(sm) {
+        margin-bottom: 58px;
+    }
+}
+.kl-title-intro{
+	h1{
+		display: inline-block;
+		margin-bottom: 0;
+		position: relative;
+	}
+	h3{
+		margin-top: 25px;
+	}
+	.kl-gradient-animation{
+		z-index: -1;
+	    bottom: -6px;
+	    position: absolute;
+	    width: 100%;
+		@include media-breakpoint-down(md){
+		    bottom: 4px;
+		    height: 8px;
+		}
+	}
+}
+.kl-list-team{
+	margin-top: 58px;
+}
+.kl-profil-team{
+	img{
+		border-radius: 50px;
+	}
+	.kl-profil-text{
+		margin-left: 25px;
+	}
+	h3{
+		margin-bottom: 0;
+	}
+	p{
+		font-weight: normal;
+		margin-bottom: 0;
+		@include media-breakpoint-down(lg) {
+	        line-height: 23px;
+	    }
+	}
+}
+.kl-section-with-video{
+	margin-bottom: 42px;
+	@include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+    }
+}
+.kl-text-with-btn{
+	margin-bottom: 96px;
+	@include media-breakpoint-down(sm) {
+        margin-bottom: 75px;
+    }
+	h2{
+		margin-bottom: 0;
+		display: inline-block;
+		position: relative;
+		.kl-gradient-animation{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+    		z-index: -1;
+		}
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+.kl-flex-text-btn{
+	margin-top: 10px;
+	.kl-btn-black{
+		min-width: 132px;
+		margin-left: 40px;
+		@include media-breakpoint-down(sm) {
+	        margin-left: 0;
+	        margin-top: 15px;
+	    }
+	}
+}
+.kl-btn-with-icon{
+	position: relative;
+	padding-right: 42px;
+	transition: all 0.3s;
+	&:before{
+		content: '';
+		position: absolute;
+		background: url(../images/icon-feather-arrow-up-right.svg) no-repeat center;
+		background-size: contain;
+        width: 9px;
+        height: 9px;
+        right: 18px;
+    	top: 21px;
+	}
+	&:hover{
+		border: 1px solid $black;
+		color: $black;
+	}
+}
+.kl-custom-card{
+	position: relative;
+	background: $white;
+	padding: 60px 28px;
+	max-width: 381px;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	@include media-breakpoint-down(sm) {
+        padding: 60px 10px;
+    }
+	h2{
+		position: relative;
+		z-index: 1;
+		.kl-gradient-animation{
+			width: 131px;
+		    position: absolute;
+		    top: 26px;
+		    z-index: -1;
+		}
+	}
+	.kl-btn-with-icon{
+		margin-left: 15px;
+		@media (max-width: 425.98px){
+			margin-left: 8px;
+			padding-right: 14px !important;
+		}
+		&:before{
+			@media (max-width: 425.98px){
+				right: -8px;
+			}
+		}
+	}
+}
+.kl-p-video{
+	padding: 32px;
+	@include media-breakpoint-down(sm) {
+        padding: 255px 10px 10px;
+    }
+}
+.kl-card-video,
+video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.kl-card-video{
+	position: absolute;
+}
+.kl-list-with-icon{
+	list-style: none;
+	padding-left: 0;
+	li{
+		position: relative;
+		padding-left: 28px;
+		&:before{
+			content: '';
+			position: absolute;
+			background: url(../images/icon-feather-check-circle.svg) no-repeat center;
+			background-size: contain;
+	        width: 18px;
+	        height: 16px;
+	        left: 0;
+    		top: 3px;
+		}
+		& + li{
+			margin-top: 8px;
+		}
+	} 
+}
+
+.kl-title-intro-about{
+	h2{
+		margin-top: 52px;
+		@include media-breakpoint-down(md){
+		    font-size: 20px;
+		    margin-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,139 @@
+//bg color
+@mixin bg_variant($bg) {
+    background-color: $bg !important;
+}
+
+//color
+@mixin color_variant($color) {
+    color: $color !important;
+}
+
+//shadow
+@mixin shadown_2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 14%), 0 3px 1px -2px rgba(0, 0, 0, 20%), 0 1px 5px 0 rgba(0, 0, 0, 12%);
+}
+@mixin shadown_4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 14%), 0 1px 10px 0 rgba(0, 0, 0, 12%), 0 2px 4px -1px rgba(0, 0, 0, 20%);
+}
+@mixin shadown_8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 14%), 0 3px 14px 2px rgba(0, 0, 0, 12%), 0 5px 5px -3px rgba(0, 0, 0, 20%);
+}
+
+//buttons
+@mixin buttons {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    color: $black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font_secondary;
+    font-size: 15px;
+    font-weight: $medium;
+    line-height: 1.2;
+    padding: 15px 20px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+//buttons rounded
+@mixin buttons_rounded {
+    @include buttons;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+}
+
+//buttons variant
+@mixin buttons_variant($bg, $color) {
+    background-color: $bg;
+    border-color: $bg;
+    @if ($bg == $white) {
+        color: $black;
+    } @else {
+        color: $color;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        @if ($bg == $white) {
+            background-color: darken($bg, 5%);
+            border-color: darken($bg, 5%);
+            color: $black;
+        } @else {
+            background-color: lighten($bg, 8%);
+            border-color: lighten($bg, 8%);
+            color: $color;
+        }
+        @include shadown_2dp;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+//buttons outline variant
+@mixin buttons_outline_variant($color, $color_active) {
+    background-color: transparent;
+    border-color: $color;
+    color: $color;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color;
+        border-color: $color;
+        @if ($color == $white) {
+            color: $black;
+        } @else {
+            color: $color_active;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+//gradient bg animation
+@mixin gradient_bg_animation {
+    
+}
+
+//max width
+@mixin border_radius($val) {
+    border-radius: $val !important;
+}
+
+//max width
+@mixin max_width($val) {
+    max-width: $val;
+}
+
+//line height
+@mixin line_height($val) {
+    line-height: $val !important;
+}
+
+//z-index
+@mixin z_index($val) {
+    z-index: $val !important;
+}
+
+@mixin gradient_title_animation($height, $bottom, $left, $right){
+    height: #{$height}px !important;
+    bottom: #{$bottom}px !important;
+    right: #{$right}px !important;
+    left: #{$left}px !important;
+}
+
+@mixin margin_bottom($val){
+    margin-bottom: $val !important;
+}
